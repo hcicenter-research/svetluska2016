@@ -1,4 +1,4 @@
-# "Svetluška 2016"
+# Naviterier Conversation
 Source code repository for "Naviterier Conversation" project funded by Czech Radio Foundation project Svetluska in 2016.
 
 The project contains two separate subprojects: 
