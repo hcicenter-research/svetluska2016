@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Naviterier</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<link rel="apple-touch-icon" type="image/png" href="img/icon-apple.png">
+	<link rel="icon" type="image/png" href="img/icon-apple.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body lang="cs">
+  <div class="main">
+      <p class="text">Našel jsem více adres, vyber jednu z nich prosím.</p>
+      <form action="" aria-role="form" class="radios">
+        <input type="radio" name="r1" id="r1" value="Dlouhá 3859/12" aria-labeledby="l1">
+        <label for="r1" id="l1" aria-hidden="true">Dlouhá 3859/12</label>
+        <input type="radio" name="r2" id="r2" value="Jungmannova 680/25" aria-labeledby="l2">
+        <label for="r2" id="l2" aria-hidden="true">Jungmannova 680/25</label>
+        <input type="radio" name="r3" id="r3" value="Karlovo náměstí 1623/6" aria-labeledby="l3">
+        <label for="r3" id="l3" aria-hidden="true">Karlovo náměstí 1623/6</label>
+        <input type="submit" value="Vybrat označenou adresu" onclick="window.location = 'usegps.html';return false;">
+        <a href="index.html" class="btn" aria-role="button" role="button">Zpět na hledání</a>
+      </form>
+  </div>
+</body>
+</html>
