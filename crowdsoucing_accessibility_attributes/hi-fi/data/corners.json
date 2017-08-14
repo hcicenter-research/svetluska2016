@@ -1,0 +1,158 @@
+[  
+   {  
+      "id":"50.07756614.419302",
+      "color":"orange",
+      "zindex":3,
+      "shape": "round",
+      "validationNumber": 4,
+      "points":[  
+         {  
+            "lat":50.077566,
+            "lng":14.419302
+         }
+      ]
+   },
+   {  
+      "id":"50.07768614.419328",
+      "color":"gray",
+      "zindex":2,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.077686,
+            "lng":14.419328
+         }
+      ]
+   },
+   {  
+      "id":"50.07782714.418158",
+      "color":"gray",
+      "zindex":2,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.077827,
+            "lng":14.418158
+         }
+      ]
+   },
+   {  
+      "id":"50.07777514.417874",
+      "color":"gray",
+      "zindex":3,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.077775,
+            "lng":14.417874
+         }
+      ]
+   },
+   {  
+      "id":"50.07791914.417628",
+      "color":"red",
+      "zindex":3,
+      "shape": "sharp",
+      "validationNumber": 2,
+      "points":[  
+         {  
+            "lat":50.077919,
+            "lng":14.417628
+         }
+      ]
+   },
+   {  
+      "id":"50.07793414.41781",
+      "color":"gray",
+      "zindex":2,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.077934,
+            "lng":14.41781
+         }
+      ]
+   },
+   {  
+      "id":"50.07826414.418847",
+      "color":"gray",
+      "zindex":3,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.078264,
+            "lng":14.418847
+         }
+      ]
+   },
+   {  
+      "id":"50.07830514.41895",
+      "color":"gray",
+      "zindex":3,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.078305,
+            "lng":14.41895
+         }
+      ]
+   },
+   {  
+      "id":"50.07824614.419293",
+      "color":"gray",
+      "zindex":2,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.078246,
+            "lng":14.419293
+         }
+      ]
+   },
+   {  
+      "id":"50.07803914.41963",
+      "color":"gray",
+      "zindex":2,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.078039,
+            "lng":14.41963
+         }
+      ]
+   },
+   {  
+      "id":"50.07907914.419715",
+      "color":"gray",
+      "zindex":3,
+      "shape": null,
+      "validationNumber": 0,
+      "points":[  
+         {  
+            "lat":50.079079,
+            "lng":14.419715
+         }
+      ]
+   },
+   {  
+      "id":"50.07927914.419736",
+      "color":"green",
+      "zindex":2,
+      "shape": "refracted",
+      "validationNumber": 5,
+      "points":[  
+         {  
+            "lat":50.079279,
+            "lng":14.419736
+         }
+      ]
+   }
+]

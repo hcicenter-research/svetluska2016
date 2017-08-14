@@ -1,0 +1,1154 @@
+[  
+   {  
+      "id":"50.07595514.419008",
+      "color":"#55ba47",
+      "points":[  
+         {  
+            "lat":50.075955,
+            "lng":14.419008
+         },
+         {  
+            "lat":50.076589,
+            "lng":14.419136
+         },
+         {  
+            "lat":50.077197,
+            "lng":14.41928
+         },
+         {  
+            "lat":50.077592,
+            "lng":14.419381
+         }
+      ],
+      "validationNumber": 6,
+      "width": "200",
+      "isLongi": false,
+      "isSide": false,      
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "asphalt",
+      "surfQuality": "1",
+      "vicinityRight": "buildings",
+      "vicinityLeft": "greenery"
+   },
+   {  
+      "id":"50.07760514.419349",
+      "color":"#55ba47",
+      "points":[  
+         {  
+            "lat":50.077605,
+            "lng":14.419349
+         },
+         {  
+            "lat":50.077579,
+            "lng":14.418817
+         },
+         {  
+            "lat":50.077569,
+            "lng":14.418519
+         },
+         {  
+            "lat":50.077578,
+            "lng":14.418422
+         },
+         {  
+            "lat":50.077599,
+            "lng":14.418337
+         },
+         {  
+            "lat":50.077642,
+            "lng":14.418249
+         },
+         {  
+            "lat":50.077701,
+            "lng":14.41816
+         }
+      ],
+      "validationNumber": 6,
+      "width": "200",
+      "isLongi": false,
+      "isSide": false,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "asphalt",
+      "surfQuality": "2",
+      "vicinityRight": "buildings",
+      "vicinityLeft": "greenery"
+   },
+   {  
+      "id":"50.07774614.418095",
+      "color":"#55ba47",
+      "points":[  
+         {  
+            "lat":50.077746,
+            "lng":14.418095
+         },
+         {  
+            "lat":50.077818,
+            "lng":14.418016
+         },
+         {  
+            "lat":50.077885,
+            "lng":14.417957
+         }
+      ],
+      "validationNumber": 6,
+      "width": "200",
+      "isLongi": false,
+      "isSide": false,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "asphalt",
+      "surfQuality": "1",
+      "vicinityRight": "buildings",
+      "vicinityLeft": "greenery"
+   },
+   {  
+      "id":"50.0776914.418144",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.07769,
+            "lng":14.418144
+         },
+         {  
+            "lat":50.077327,
+            "lng":14.417511
+         },
+         {  
+            "lat":50.077182,
+            "lng":14.417174
+         },
+         {  
+            "lat":50.076982,
+            "lng":14.416957
+         },
+         {  
+            "lat":50.076883,
+            "lng":14.416676
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07768314.419407",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077683,
+            "lng":14.419407
+         },
+         {  
+            "lat":50.077637,
+            "lng":14.418587
+         },
+         {  
+            "lat":50.077632,
+            "lng":14.418479
+         },
+         {  
+            "lat":50.077634,
+            "lng":14.418447
+         },
+         {  
+            "lat":50.077655,
+            "lng":14.418377
+         },
+         {  
+            "lat":50.077685,
+            "lng":14.418312
+         },
+         {  
+            "lat":50.077731,
+            "lng":14.418227
+         },
+         {  
+            "lat":50.077904,
+            "lng":14.418026
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07769614.419412",
+      "color":"#ec4345",
+      "points":[  
+         {  
+            "lat":50.077696,
+            "lng":14.419412
+         },
+         {  
+            "lat":50.078337,
+            "lng":14.419398
+         }
+      ],
+      "validationNumber": 2,
+      "width": "120",
+      "isLongi": false,
+      "isSide": false,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": "smallCubes",
+      "surfQuality": "1",
+      "vicinityRight": "greenery",
+      "vicinityLeft": "road"
+   },
+   {  
+      "id":"50.0783314.419371",
+      "color":"#f3b01a",
+      "points":[  
+         {  
+            "lat":50.07833,
+            "lng":14.419371
+         },
+         {  
+            "lat":50.078084,
+            "lng":14.418652
+         },
+         {  
+            "lat":50.077903,
+            "lng":14.418029
+         }
+      ],
+      "validationNumber": 3,
+      "width": "120",
+      "isLongi": false,
+      "isSide": false,      
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "smallCubes",
+      "surfQuality": "2",
+      "vicinityRight": "greenery",
+      "vicinityLeft": "road"
+   },
+   {  
+      "id":"50.07761614.419589",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077616,
+            "lng":14.419589
+         },
+         {  
+            "lat":50.077612,
+            "lng":14.419882
+         },
+         {  
+            "lat":50.077478,
+            "lng":14.421175
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07770714.419592",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077707,
+            "lng":14.419592
+         },
+         {  
+            "lat":50.077713,
+            "lng":14.419907
+         },
+         {  
+            "lat":50.077582,
+            "lng":14.421208
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07770414.419566",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077704,
+            "lng":14.419566
+         },
+         {  
+            "lat":50.077923,
+            "lng":14.41955
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07792714.419574",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077927,
+            "lng":14.419574
+         },
+         {  
+            "lat":50.078053,
+            "lng":14.421003
+         },
+         {  
+            "lat":50.078027,
+            "lng":14.421399
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07799614.419575",
+      "color":"#ec4345",
+      "points":[  
+         {  
+            "lat":50.077996,
+            "lng":14.419575
+         },
+         {  
+            "lat":50.079128,
+            "lng":14.419662
+         }
+      ],
+      "validationNumber": 2,
+      "width": "120",
+      "isLongi": false,
+      "isSide": true,
+      "longiSize": null,
+      "sideSize": "small",
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "stones",
+      "surfQuality": "3",
+      "vicinityRight": "road",
+      "vicinityLeft": "buildings"
+   },
+   {  
+      "id":"50.07800314.419604",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078003,
+            "lng":14.419604
+         },
+         {  
+            "lat":50.078118,
+            "lng":14.420961
+         },
+         {  
+            "lat":50.078096,
+            "lng":14.421396
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07761114.419558",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077611,
+            "lng":14.419558
+         },
+         {  
+            "lat":50.077576,
+            "lng":14.419544
+         },
+         {  
+            "lat":50.076926,
+            "lng":14.419342
+         },
+         {  
+            "lat":50.075962,
+            "lng":14.419184
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07774614.418084",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077746,
+            "lng":14.418084
+         },
+         {  
+            "lat":50.077359,
+            "lng":14.417405
+         },
+         {  
+            "lat":50.077218,
+            "lng":14.417099
+         },
+         {  
+            "lat":50.077016,
+            "lng":14.416838
+         },
+         {  
+            "lat":50.076962,
+            "lng":14.416653
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07788314.417946",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077883,
+            "lng":14.417946
+         },
+         {  
+            "lat":50.077546,
+            "lng":14.416478
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07788614.417663",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077886,
+            "lng":14.417663
+         },
+         {  
+            "lat":50.077617,
+            "lng":14.416429
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07790414.417664",
+      "color":"#ec4345",
+      "points":[  
+         {  
+            "lat":50.077904,
+            "lng":14.417664
+         },
+         {  
+            "lat":50.079278,
+            "lng":14.41678
+         }
+      ],
+      "validationNumber": 1,
+      "width": "120",
+      "isLongi": false,
+      "isSide": true,
+      "longiSize": null,
+      "sideSize": "small",
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "asphalt",
+      "surfQuality": "2",
+      "vicinityRight": "greenery",
+      "vicinityLeft": "buildings"
+   },
+   {  
+      "id":"50.07792314.417788",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.077923,
+            "lng":14.417788
+         },
+         {  
+            "lat":50.079326,
+            "lng":14.416896
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.0779114.417795",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.07791,
+            "lng":14.417795
+         },
+         {  
+            "lat":50.078148,
+            "lng":14.418592
+         },
+         {  
+            "lat":50.078243,
+            "lng":14.418882
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07825614.418876",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078256,
+            "lng":14.418876
+         },
+         {  
+            "lat":50.078521,
+            "lng":14.418508
+         },
+         {  
+            "lat":50.078734,
+            "lng":14.418315
+         },
+         {  
+            "lat":50.079164,
+            "lng":14.418068
+         },
+         {  
+            "lat":50.079598,
+            "lng":14.417955
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07829314.418985",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078293,
+            "lng":14.418985
+         },
+         {  
+            "lat":50.078582,
+            "lng":14.418576
+         },
+         {  
+            "lat":50.078765,
+            "lng":14.418401
+         },
+         {  
+            "lat":50.079137,
+            "lng":14.418197
+         },
+         {  
+            "lat":50.079627,
+            "lng":14.418065
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07828714.418991",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078287,
+            "lng":14.418991
+         },
+         {  
+            "lat":50.078485,
+            "lng":14.419436
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07849814.419443",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078498,
+            "lng":14.419443
+         },
+         {  
+            "lat":50.07963,
+            "lng":14.419526
+         },
+         {  
+            "lat":50.080188,
+            "lng":14.419717
+         },
+         {  
+            "lat":50.080532,
+            "lng":14.419738
+         },
+         {  
+            "lat":50.081069,
+            "lng":14.419609
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07913714.419664",
+      "color":"#f3b01a",
+      "points":[  
+         {  
+            "lat":50.079137,
+            "lng":14.419664
+         },
+         {  
+            "lat":50.079117,
+            "lng":14.420345
+         }
+      ],
+      "validationNumber": 3,
+      "width": "120",
+      "isLongi": false,
+      "isSide": true,
+      "longiSize": null,
+      "sideSize": "small",
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "stones",
+      "surfQuality": "1",
+      "vicinityRight": "road",
+      "vicinityLeft": "buildings"
+   },
+   {  
+      "id":"50.07911614.42049",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079116,
+            "lng":14.42049
+         },
+         {  
+            "lat":50.079106,
+            "lng":14.421059
+         },
+         {  
+            "lat":50.079054,
+            "lng":14.42188
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07914414.421869",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079144,
+            "lng":14.421869
+         },
+         {  
+            "lat":50.079189,
+            "lng":14.421129
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07919214.420973",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079192,
+            "lng":14.420973
+         },
+         {  
+            "lat":50.079206,
+            "lng":14.420276
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07921314.42012",
+      "color":"#ec4345",
+      "points":[  
+         {  
+            "lat":50.079213,
+            "lng":14.42012
+         },
+         {  
+            "lat":50.079227,
+            "lng":14.419669
+         }
+      ],
+      "validationNumber": 1,
+      "width": "120",
+      "isLongi": true,
+      "isSide": true,
+      "longiSize": "medium",
+      "sideSize": "small",
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "stones",
+      "surfQuality": "1",
+      "vicinityRight": "road",
+      "vicinityLeft": "buildings"
+   },
+   {  
+      "id":"50.07924414.419669",
+      "color":"#f3b01a",
+      "points":[  
+         {  
+            "lat":50.079244,
+            "lng":14.419669
+         },
+         {  
+            "lat":50.079605,
+            "lng":14.419707
+         },
+         {  
+            "lat":50.080121,
+            "lng":14.419863
+         },
+         {  
+            "lat":50.080407,
+            "lng":14.419901
+         },
+         {  
+            "lat":50.08112,
+            "lng":14.419745
+         }
+      ],
+      "validationNumber": 3,
+      "width": "120",
+      "isLongi": false,
+      "isSide": true,
+      "longiSize": null,
+      "sideSize": "small",
+      "isLongiUp": false,
+      "longiUpSize": null,
+      "surface": "stones",
+      "surfQuality": "3",
+      "vicinityRight": "road",
+      "vicinityLeft": "buildings"
+   },
+   {  
+      "id":"50.07921514.420142",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079215,
+            "lng":14.420142
+         },
+         {  
+            "lat":50.079952,
+            "lng":14.420239
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07921214.420266",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079212,
+            "lng":14.420266
+         },
+         {  
+            "lat":50.079931,
+            "lng":14.420352
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07909414.420347",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079094,
+            "lng":14.420347
+         },
+         {  
+            "lat":50.078646,
+            "lng":14.420465
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.079114.42048",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.0791,
+            "lng":14.42048
+         },
+         {  
+            "lat":50.078665,
+            "lng":14.420582
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07940314.416833",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079403,
+            "lng":14.416833
+         },
+         {  
+            "lat":50.079795,
+            "lng":14.418348
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07932314.416879",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079323,
+            "lng":14.416879
+         },
+         {  
+            "lat":50.079602,
+            "lng":14.417951
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07962914.418087",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.079629,
+            "lng":14.418087
+         },
+         {  
+            "lat":50.079737,
+            "lng":14.418427
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   },
+   {  
+      "id":"50.07857914.420322",
+      "color":"#424242",
+      "points":[  
+         {  
+            "lat":50.078579,
+            "lng":14.420322
+         },
+         {  
+            "lat":50.078655,
+            "lng":14.420698
+         }
+      ],
+      "validationNumber": 0,
+      "width": null,
+      "isLongi": null,
+      "isSide": null,
+      "longiSize": null,
+      "sideSize": null,
+      "isLongiUp": null,
+      "longiUpSize": null,
+      "surface": null,
+      "surfQuality": null,
+      "vicinityRight": null,
+      "vicinityLeft": null
+   }
+]

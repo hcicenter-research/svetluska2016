@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="obstacle-val">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+
+        <div data-page="obstacle-recapitul" class="page">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Ověření informací o překážce</div>
+              <div class="right points-title">+5<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <p class="buttons-row">
+              <a href="#obstacle-edit" id="button-obstacle-validation-edit" class="button button-big color-blue">Upravit</a>
+              <a href="#" id="button-obstacle-validation-confirm" class="button button-big button-fill color-blue">Potvrdit</a>              
+            </p>             
+          </div>
+
+
+          <div class="page-content">
+
+          <div id="obstacleValidationNumber-color" class="content-block-title validationNumber-title">Stupeň ověření: <span id="rec-obstacle-validation-status"></span></div>
+            <div class="content-block-title">Upravte nebo potvrdte informace o překážce</div>
+            <div class="list-block cards-list">
+              <ul>        
+                <li class="card">
+                  <div class="card-content">
+                    
+
+                     <div class="card card-recapitul-2-in-row">
+                      <div class="card-header card-header-gray">Poloha</div>
+                      <div class="card-content">
+                        <div class="card-content-inner" id="map-canvas-obstacle-position"></div>
+                      </div>                      
+                    </div>
+
+                    <div class="card card-recapitul-2-in-row">
+                      <div class="card-header card-header-gray">Fotografie</div>
+                      <div class="card-content">
+                        <div class="card-content-inner fit-image"><img src="" id="rec-obstacle-photo" /></div>
+                      </div>                      
+                    </div> 
+                </div>
+                <div class="card-footer item-title">Typ: <span id="rec-obstacle-type" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Poloha na chodníku: <span id="rec-obstacle-position" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Přechodná šířka chodníku: <span id="rec-obstacle-passableWidth" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Rozměry: <span id="rec-obstacle-dimensions-width" class="font-color-black"></span><span id="rec-obstacle-dimensions-length" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Trvanlivost: <span id="rec-obstacle-istemporary" class="font-color-black"></span></div>
+          <div class="card-footer item-title"><div id="rec-obstacle-durability-label"></div><span id="rec-obstacle-durability-value" class="font-color-black"></span></div>
+                
+
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- EDIT obstacle-->          
+<div data-page="obstacle-edit" class="page cached">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding page-title">Úprava informací o překážce</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+      <a href="#" id="button-obstacle-edit-selection" class="button button-big button-fill color-blue">Potvrdit</a> 
+  </div>
+
+
+  <div class="page-content"> 
+
+    <div class="content-block-title">Vyberte informace, které chcete upravit</div>
+    <div class="content-block">      
+                <div class="list-block">                  
+                <ul>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                       
+                        <input type="checkbox" name="my-checkbox" value="sidewalk">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Poloha</div>
+                        </div>
+                      </label>
+                    </li>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="crosswalks">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Fotografie</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="corners">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Typ překážky</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Poloha na chodníku</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Přechodná šířka chodníku</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Rozměry</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Trvanlivost</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Kdy skontrolovat</div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg&callback=initMapObstaclePosition">    
+</script>
+</body>
+</html>

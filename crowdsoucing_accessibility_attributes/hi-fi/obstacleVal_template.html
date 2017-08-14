@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="obstacle-val">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+
+        <div data-page="obstacle-recapitul" class="page">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Ověření informací o překážce</div>
+              <div class="right points-title">+4<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <p class="buttons-row">
+              <a href="#obstacle-val-durability" id="button-obstacle-validation-no" class="button button-big color-blue">Ne</a>
+              <a href="#" id="button-obstacle-validation-yes" class="button button-big color-blue">Ano</a>              
+            </p>             
+          </div>
+
+
+          <div class="page-content"> 
+
+            <div class="content-block-title">Trvanlivost překážky vypršela. Je již překážka odstraněna?</div>
+            <div class="list-block cards-list">
+              <ul>        
+                <li class="card">
+                  <div class="card-content">
+                    
+
+                     <div class="card card-recapitul-2-in-row">
+                      <div class="card-header card-header-gray">Poloha</div>
+                      <div class="card-content">
+                        <div class="card-content-inner" id="map-canvas-obstacle-position"></div>
+                      </div>                      
+                    </div>
+
+                    <div class="card card-recapitul-2-in-row">
+                      <div class="card-header card-header-gray">Fotografie</div>
+                      <div class="card-content">
+                        <div class="card-content-inner fit-image"><img src="" id="rec-obstacle-photo"></div>
+                      </div>                      
+                    </div> 
+                </div>
+                <div class="card-footer item-title">Typ: <span id="rec-obstacle-type" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Poloha na chodníku: <span id="rec-obstacle-position" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Přechodná šířka chodníku: <span id="rec-obstacle-passableWidth" class="font-color-black"></span></div>
+                <div class="card-footer item-title">Rozměry: <span id="rec-obstacle-dimensions-width" class="font-color-black"></span><span id="rec-obstacle-dimensions-length" class="font-color-black"></span></div>
+                
+
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div data-page="obstacle-val-durability" class="page cached">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Trvanlivost překážky</div>
+        <div class="right points-title">+3<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">           
+      <a href="#" id="button-obstacle-val-durability" class="button button-big button-fill">Potvrdit</a>             
+    </div>
+
+
+    <div class="page-content"> 
+
+      <div class="list-block" id="obstacle_meter_width_div">
+        <div class="content-block-title">Kdy máme překážku znovu zkontrolovat?</div>
+        <ul>
+
+
+          <li>
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+              <select name="meter-units">
+                <option class="obstacle-val-durability" value="3" selected>3 dny</option>
+                <option class="obstacle-val-durability" value="7">týden</option>
+                <option class="obstacle-val-durability" value="30">měsíc</option>
+                <option class="obstacle-val-durability" value="90">tři měsíce</option>
+                <option class="obstacle-val-durability" value="180">půl roku</option>
+                <option class="obstacle-val-durability" value="360">rok</option>
+                <option class="obstacle-val-durability" value="365">více než rok</option>
+
+              </select>
+              <div class="item-content card-content-inner-top-margin">
+                <div class="item-inner">                    
+                  <div class="item-title">Zkontrolovat překážku o</div>
+                  <div class="item-after">3 dny</div>
+                </div>
+              </div>
+            </a>
+          </li>           
+
+        </ul>             
+
+      </div>
+    </div>
+
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg&callback=initMapObstaclePosition">    
+</script>
+</body>
+</html>

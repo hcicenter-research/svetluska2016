@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="validation-body">
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="corner-shape" class="page">
+
+
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+                <div class="center sliding">Ověření tvaru rohu</div>
+                <div class="right points-title">+3<br>body</div>
+              </div>
+            </div>
+
+            
+            <div class="toolbar">
+              <p class="buttons-row">
+                <a href="#" id="button-edit-corner-val" class="button button-big color-blue">Upravit</a>
+                <a href="#" id="button-confirm-corner-val" class="button button-big button-fill color-blue">Potvrdit</a>              
+              </p> 
+              
+            </div>
+
+            
+            <div class="page-content">
+            <div id="cornerValidationNumber-color" class="content-block-title validationNumber-title">Stupeň ověření: <span id="rec-corner-validation-status"></span></div>
+             <div class="content-block-title">Upravte nebo potvrdte tvar rohu</div>
+            <div class="corner-content" id="page-content-validation-corner">
+
+              
+                <div id="card-corner-validation" class="card item-inner">                
+                 <div class="card-content">
+                  <div class="card-content-inner" id="card-corner-shape-icon"></div>
+                </div>
+                <div class="card-footer">
+                  <div class="item-title footer-title-center" id="corner-shape-footer"></div>
+                </div>
+              </div>
+                     
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>    
+<script type="text/javascript" src="js/my-app.js"></script>      
+</body>
+</html>

@@ -1,0 +1,20 @@
+[  
+   {  
+      "id":"50.07764214.418798",      
+      "zindex":4,      
+      "validationNumber": 1,
+      "points": 
+         {  
+            "lat":50.077642,
+            "lng":14.418798
+         },      
+      "position": "left",
+      "passableWidth": "70",
+      "type": "hole",
+      "imageUrl": "img/obstacle1.jpg",
+      "width": "20",
+      "length": "30",
+      "isTemporary": "true",
+      "durability": "0"
+   }
+]

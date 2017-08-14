@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+
+
+        <div data-page="sidewalk-width" class="page">
+
+          <div class="navbar">                             
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding page-title">Šířka chodníku</div>
+              <div class="right points-title">+5<br>bodů</div>
+            </div>
+          </div>
+
+          <div class="toolbar">
+
+            <a href="#" id="button-sidewalk-select-width" class="button button-big button-fill disabled">Pokračovat</a>
+
+          </div>
+
+
+          <div class="page-content">
+
+            <div class="content-block-title">Vyberte způsob měření</div>
+
+            <label class="label-radio item-content label-yellow">
+              <input type="radio" name="sidewalk-width-radio" value="meter" id="sidewalk_card_meter">
+              <div class="card item-inner card-3-in-row-measure">
+               <div class="card-content">
+                <div class="card-content-inner "><img src="img/meter.png" alt="Metr"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">metr</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="sidewalk-width-radio" value="creditcard" id="sidewalk_card_creditcard">
+            <div class="card item-inner card-3-in-row-measure">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/creditcard.png" alt="Kreditní karta"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">kreditka</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="sidewalk-width-radio" value="feet" id="sidewalk_card_feet">
+            <div class="card item-inner card-3-in-row-measure">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/feet.png" alt="Stopa"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">stopa</div>
+              </div>
+            </div>
+          </label>
+
+
+          <!-- Metr -->
+          <div class="list-block" id="sidewalk_meter_div">
+            <div class="content-block-title">Zadejte šířku nejužšího místa na chodníku</div>
+            <ul>
+
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Naměřená šířka</div>
+                    <div class="item-input">
+                      <input id="sidewalk-width-input-meter" type="number" placeholder="zadejte šířku">
+                    </div>
+                  </div>
+                </div>
+              </li>                 
+
+
+              <li>
+                <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                  <select name="meter-units">
+                    <option class="sidewalk-width-option-meter" value="1" selected>cm</option>
+                    <option class="sidewalk-width-option-meter" value="100">m</option>
+                    <option class="sidewalk-width-option-meter" value="0.1">mm</option>
+
+                  </select>
+                  <div class="item-content">
+                    <div class="item-inner">                    
+                      <div class="item-title">Jednotky</div>
+                      <div class="item-after">cm</div>
+                    </div>
+                  </div>
+                </a>
+              </li>  
+            </ul>
+          </div>
+
+
+          <!-- Kreditní karta -->        
+          <div class="list-block" id="sidewalk_creditcard_div">
+            <div class="content-block-title">Zadejte šířku nejužšího místa na chodníku</div>
+            <ul>
+
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Počet kreditek</div>
+                    <div class="item-input">
+                      <input id="sidewalk-width-input-creditcard" type="number" placeholder="zadejte počet kreditek">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                  <select name="creditcard-units">
+                    <option class="sidewalk-width-option-creditcard" value="8.56" selected>po šířce</option>
+                    <option class="sidewalk-width-option-creditcard" value="5.398">po výšce</option>
+
+                  </select>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">Kreditní karta</div>
+                      <div class="item-after">po šířce</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <!-- STOPA -->       
+          <div class="list-block" id="sidewalk_feet_div">
+           <div class="content-block-title">Zadejte šířku nejužšího místa na chodníku</div>
+           <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Počet stop</div>
+                  <div class="item-input">
+                    <input id="sidewalk-width-input-feet" type="number" placeholder="zadejte počet stop">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="item-link smart-select" data-page-title="Velkost boty v EU číslování" data-back-text=" " data-back-on-select="true">
+
+                <select name="feet-units">
+                  <optgroup label="Dámské číslování">
+                    <option class="sidewalk-width-option-feet" value="21.3">35 (21.3 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="22.2">36 (22.2 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="23">37 (23 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="23.8">38 (23.8 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="24.6">39 (24.6 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="25.4" selected>40 (25.4 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="26.2">41 (26.2 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="27.1">42 (27.1 cm)</option>                                                      
+                  </optgroup>
+
+                  <optgroup label="Pánské číslování">
+                    <option class="sidewalk-width-option-feet" value="23.5">39 (23.5 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="24.4">40 (24.4 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="25.4">41 (25.4 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="26">42 (26 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="27">43 (27 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="27.9">44 (27.9 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="28.6">45 (28.6 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="29.4">46 (29.4 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="30.2">47 (30.2 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="31">48 (31 cm)</option>
+                    <option class="sidewalk-width-option-feet" value="31.8">49 (31.8 cm)</option>
+                  </optgroup>
+                </select>
+
+
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Velkost boty</div>
+                    <div class="item-after">40</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--SLOPE PAGE-->
+    <div data-page="sidewalk-slope" class="page cached">
+
+      <div class="navbar">                             
+        <div class="navbar-inner">
+          <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+          <div class="center sliding">Typ sklonu</div>
+          <div class="right points-title">+3<br>body</div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <a href="#" id="button-sidewalk-select-slope" class="button button-big button-fill">Pokračovat</a>
+      </div>
+
+      <div class="page-content">
+        <div class="content-block-title">Má choník sklon? Otočte se ve směru jízdy nejbližšího jízdního pruhu a vyberte typ sklonu</div>
+        
+
+        <label class="label-checkbox item-content label-yellow">
+
+          <input id="sidewalk-input-longi-slope" type="checkbox" name="sidewalk-slopes-checkbox" value="longiDown">
+          <div class="card my-card item-inner">
+           <div class="card-content">
+            <div class="card-content-inner"><img src="img/slope_long_m.png" alt="Přímý sklon z kopce"></div>
+          </div>
+          <div class="card-footer">
+            <div class="item-title footer-title-center">přímý sklon z kopce</div>
+          </div>
+        </div>
+      </label>
+
+      <label class="label-checkbox item-content label-yellow">
+
+          <input id="sidewalk-input-longi-up-slope" type="checkbox" name="sidewalk-slopes-checkbox" value="longiUp">
+          <div class="card my-card item-inner">
+           <div class="card-content">
+            <div class="card-content-inner"><img src="img/slope_long_m_2.png" alt="Přímý sklon do kopce"></div>
+          </div>
+          <div class="card-footer">
+            <div class="item-title footer-title-center">přímý sklon do kopce</div>
+          </div>
+        </div>
+      </label>
+
+      <label class="label-checkbox item-content label-yellow">            
+        <input id="sidewalk-input-side-slope" type="checkbox" name="sidewalk-slopes-checkbox" value="side">           
+        <div class="card my-card item-inner">
+          <div class="card-content">
+            <div class="card-content-inner"><img src="img/slope_side_m.png" alt="Bočný sklon"></div>
+          </div>
+          <div class="card-footer">
+            <div class="item-title footer-title-center">bočný sklon</div>
+          </div>
+        </div>
+      </label>
+      <div class="content-block-title">* Vyberte 0, 1, 2 nebo 3 možnosti</div><br>       
+
+    </div>
+
+  </div>
+
+
+
+  <!-- LONGITUDINAL SLOPE PAGE-->
+  <div data-page="crosswalk-longiSlopeDown" class="page cached">
+
+    <div class="navbar">                             
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Velikost přímého sklonu z kopce</div>
+        <div class="right points-title">+2<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+
+      <a href="#" id="button-sidewalk-select-longiSlope-size" class="button button-big button-fill disabled">Pokračovat</a>
+
+    </div>
+
+    <div class="page-content">
+      <div class="content-block-title">Vyberte velikost přímeho sklonu z kopce</div>
+
+      <label class="label-radio item-content label-yellow">
+        <input type="radio" name="sidewalk-longiSlope-radio" value="small">
+        <div class="card my-card item-inner">
+         <div class="card-content">
+          <div class="card-content-inner"><img src="img/slope_long_l.png" alt="Malý sklon"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">malý</div>
+        </div>
+      </div>
+    </label>
+
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="sidewalk-longiSlope-radio" value="medium">
+      <div class="card my-card item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/slope_long_m.png" alt="Střední sklon"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">střední</div>
+      </div>
+    </div>              
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-longiSlope-radio" value="large">
+    <div class="card my-card item-inner">
+     <div class="card-content">
+      <div class="card-content-inner"><img src="img/slope_long_h.png" alt="Velký sklon"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">velký</div>
+    </div>
+  </div>
+</label>
+
+</div>
+
+</div>
+
+<div data-page="crosswalk-longiSlopeUp" class="page cached">
+
+    <div class="navbar">                             
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Velikost přímého sklonu do kopce</div>
+        <div class="right points-title">+2<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+
+      <a href="#" id="button-sidewalk-select-longiSlope-size-up" class="button button-big button-fill disabled">Pokračovat</a>
+
+    </div>
+
+    <div class="page-content">
+      <div class="content-block-title">Vyberte velikost přímeho sklonu do kopce</div>
+
+      <label class="label-radio item-content label-yellow">
+        <input type="radio" name="sidewalk-longiSlope-up-radio" value="small">
+        <div class="card my-card item-inner">
+         <div class="card-content">
+          <div class="card-content-inner"><img src="img/slope_long_l_2.png" alt="Malý sklon"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">malý</div>
+        </div>
+      </div>
+    </label>
+
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="sidewalk-longiSlope-up-radio" value="medium">
+      <div class="card my-card item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/slope_long_m_2.png" alt="Střední sklon"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">střední</div>
+      </div>
+    </div>              
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-longiSlope-up-radio" value="large">
+    <div class="card my-card item-inner">
+     <div class="card-content">
+      <div class="card-content-inner"><img src="img/slope_long_h_2.png" alt="Velký sklon"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">velký</div>
+    </div>
+  </div>
+</label>
+
+</div>
+
+</div>
+
+
+
+<!-- SIDE SLOPE PAGE-->
+<div data-page="crosswalk-sideSlope" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Velikost bočního sklonu</div>
+      <div class="right points-title">+2<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+
+    <a href="#sidewalk-surface" id="button-sidewalk-select-sideSlope-size" class="button button-big button-fill disabled">Pokračovat</a>
+
+  </div>
+
+  <div class="page-content">
+    <div class="content-block-title">Vyberte velikost bočního sklonu</div>
+
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="sidewalk-sideSlope-radio" value="small">
+      <div class="card my-card item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/slope_side_l.png" alt="Malý sklon"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">malý</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-sideSlope-radio" value="medium">
+    <div class="card my-card item-inner">
+     <div class="card-content">
+      <div class="card-content-inner"><img src="img/slope_side_m.png" alt="Střední sklon"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">střední</div>
+    </div>
+  </div>              
+</label>
+
+<label class="label-radio item-content label-yellow">
+  <input type="radio" name="sidewalk-sideSlope-radio" value="large">
+  <div class="card my-card item-inner">
+   <div class="card-content">
+    <div class="card-content-inner"><img src="img/slope_side_h.png" alt="Velký sklon"></div>
+  </div>
+  <div class="card-footer">
+    <div class="item-title footer-title-center">velký</div>
+  </div>
+</div>
+</label>
+
+</div>
+
+</div>
+
+<!-- SURFACE PAGE-->
+<div data-page="sidewalk-surface" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Povrch chodníku</div>
+      <div class="right points-title">+3<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <p class="buttons-row">
+        <a href="#sidewalk-vicinity" id="button-sidewalk-select-surface-skip" class="button button-big color-bluegray">Přeskočit</a>
+        <a href="#sidewalk-vicinity" id="button-sidewalk-select-surface" class="button button-big button-fill color-blue disabled">Pokračovat</a>
+    </p>   
+  </div>
+
+
+
+  <div class="page-content">
+
+
+    <div class="content-block-title">Vyberte typ povrchu</div>
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="sidewalk-surface-radio" value="asphalt">
+      <div class="card card-surface item-inner">          
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_asphalt.png" alt="Asfalt"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">asfalt</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-surface-radio" value="stones">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_stones.png" alt="Kamínky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">kamínky</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-surface-radio" value="smallCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs_small.png" alt="Malé kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">malé kostky</div>
+      </div>
+    </div>
+  </label>
+
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-surface-radio" value="bigCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs.png" alt="Velké kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">velké kostky</div>
+      </div>
+    </div>
+  </label> 
+
+
+  <div class="list-block" id="sidewalk_surfaceQuality_div">
+    <div class="content-block-title">Zadejte kvalitu povrchu</div>
+    <ul>
+
+      <li>
+        <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+          <select name="quality">
+            <option class="sidewalk-quality-option" value="1" selected>velmi dobrá</option>
+            <option class="sidewalk-quality-option" value="2">dobrá</option>
+            <option class="sidewalk-quality-option" value="3">špatná</option>
+
+          </select>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">Hodnocení kvality</div>
+              <div class="item-after">velmi dobrá</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> 
+</div>
+
+<!-- VICINITY PAGE-->
+<div data-page="sidewalk-vicinity" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Okolí chodníku</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">    
+    <p class="buttons-row">
+        <a href="#sidewalk-recapitul" id="button-sidewalk-select-vicinity-skip" class="button button-big color-bluegray">Přeskočit</a>
+        <a href="#sidewalk-recapitul" id="button-sidewalk-select-vicinity" class="button button-big button-fill color-blue disabled">Pokračovat</a>
+    </p> 
+  </div>
+
+
+  <div class="page-content">
+
+    <div class="content-block-title">Označte okolí chodníku ve směru jízdy nejbližšího jídního pruhu</div><br>
+    <div class="content-block-title" id="vicinity-title">Napravo</div>
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="sidewalk-vicinityRight-radio" value="buildings" id="sidewalk_card_buildingRight">
+      <div class="card item-inner card-3-in-row-measure">
+       <div class="card-content">
+        <div class="card-content-inner "><img src="img/buildings.png" alt="Budovy"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">budovy</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-vicinityRight-radio" value="road" id="sidewalk_card_roadRight">
+    <div class="card item-inner card-3-in-row-measure">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/road.png" alt="Vozovka"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">vozovka</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-vicinityRight-radio" value="greenery" id="sidewalk_card_greenRight">
+    <div class="card item-inner card-3-in-row-measure">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/greenery.png" alt="Zeleň"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">zeleň</div>
+      </div>
+    </div>
+  </label>
+
+
+  <div class="list-block">
+    <ul>
+
+      <li>
+        <label class="label-checkbox item-content">                  
+          <input type="radio" name="sidewalk-vicinityRight-radio" value="other">
+          <div class="item-media">
+            <i class="icon icon-form-checkbox"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">Jiný<input id="sidewalk-vicinityRight-input" type="text" placeholder="zadejte typ okolí"></div>
+
+          </div>
+        </label>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="content-block-title">Nalevo</div>
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="sidewalk-vicinityLeft-radio" value="buildings" id="sidewalk_card_buildingLeft">
+    <div class="card item-inner card-3-in-row-measure">
+     <div class="card-content">
+      <div class="card-content-inner "><img src="img/buildings.png" alt="Budova"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">budovy</div>
+    </div>
+  </div>
+</label>
+
+<label class="label-radio item-content label-yellow">
+  <input type="radio" name="sidewalk-vicinityLeft-radio" value="road" id="sidewalk_card_roadLeft">
+  <div class="card item-inner card-3-in-row-measure">
+    <div class="card-content">
+      <div class="card-content-inner"><img src="img/road.png" alt="Vozovka"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">vozovka</div>
+    </div>
+  </div>
+</label>
+
+<label class="label-radio item-content label-yellow">
+  <input type="radio" name="sidewalk-vicinityLeft-radio" value="greenery" id="sidewalk_card_greenLeft">
+  <div class="card item-inner card-3-in-row-measure">
+    <div class="card-content">
+      <div class="card-content-inner"><img src="img/greenery.png" alt="Zeleň"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">zeleň</div>
+    </div>
+  </div>
+</label>
+
+<div class="list-block">
+  <ul>
+
+    <li>
+      <label class="label-checkbox item-content">                  
+        <input type="radio" name="sidewalk-vicinityLeft-radio" value="other">
+        <div class="item-media">
+          <i class="icon icon-form-checkbox"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Jiný<input id="sidewalk-vicinityLeft-input" type="text" placeholder="zadejte typ okolí"></div>
+
+        </div>
+      </label>
+    </li>
+
+  </ul>
+</div>
+</div>
+</div>
+
+
+
+<!-- RECAPITULATION obstacle-->          
+<div data-page="sidewalk-recapitul" class="page cached">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Kontrola zadaných informací</div>      
+    </div>
+  </div>
+
+  <div class="toolbar">           
+    <a href="#" id="button-sidewalk-confirm" class="button button-big button-fill">Potvrdit</a>             
+  </div>
+
+
+  <div class="page-content"> 
+
+    <div class="content-block-title">Zkontrolujte zadané informace o chodníku</div>
+    <div class="list-block cards-list">
+      <ul>        
+        <li class="card">
+        <div class="card-footer item-title">Šířka nejužšího místa: <span id="rec-sidewalk-width" class="font-color-black"></span></div>                           
+        <div class="card-footer item-title">   
+          
+          <div class="card-content">
+            <div class="list-block media-list">             
+            <div class="item-title" id="slope-title">Sklon:</div>
+
+             <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-longiSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-longiSlope-size"></span></div>                    
+            </div>
+
+            <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-longiUpSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-longiUpSlope-size"></span></div>                    
+            </div>
+
+            <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-sideSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-sideSlope-size"></span></div>                    
+            </div>         
+                       
+          </div>
+        </div>
+        </div>
+
+        <div class="card-footer item-title">Typ povrchu: <span id="rec-sidewalk-surface" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Kvalita povrchu: <span id="rec-sidewalk-surfQuality" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Okolí chodníku nalevo: <span id="rec-sidewalk-vicinityLeft" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Okolí chodníku napravo: <span id="rec-sidewalk-vicinityRight" class="font-color-black"></span></div>
+
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

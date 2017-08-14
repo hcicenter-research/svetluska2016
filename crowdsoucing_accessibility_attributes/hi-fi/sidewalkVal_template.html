@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="sidewalk-val">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+
+
+<!-- RECAPITULATION obstacle-->          
+<div data-page="sidewalk-recapitul" class="page">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Ověření informací o chodníku</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">           
+    <p class="buttons-row">
+      <a href="#sidewalk-edit" id="button-sidewalk-validation-edit" class="button button-big color-blue">Upravit</a>
+      <a href="#" id="button-sidewalk-validation-confirm" class="button button-big button-fill color-blue">Potvrdit</a>              
+    </p>          
+  </div>
+
+
+  <div class="page-content"> 
+
+    <div id="sidewalkValidationNumber-color" class="content-block-title validationNumber-title">Stupeň ověření: <span id="rec-sidewalk-validation-status"></span></div>
+    <div class="content-block-title">Upravte nebo potvrdte informace o chodníku</div>
+    <div class="list-block cards-list">
+      <ul>        
+        <li class="card">
+        <div class="card-footer item-title">Šířka nejužšího místa: <span id="rec-sidewalk-width" class="font-color-black"></span></div>                           
+        <div class="card-footer item-title">   
+          
+          <div class="card-content">
+            <div class="list-block media-list">             
+            <div class="item-title" id="slope-title">Sklon:</div>
+
+             <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-longiSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-longiSlope-size"></span></div>                    
+            </div>
+
+            <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-longiUpSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-longiUpSlope-size"></span></div>                    
+            </div>
+
+            <div class="card card-3-in-row-slope">              
+              <div class="card-content">
+                <div class="card-content-inner" id="rec-sidewalk-sideSlope"></div>
+              </div>
+              <div class="card-footer footer-title-center"><span id="rec-sidewalk-sideSlope-size"></span></div>                    
+            </div>         
+                       
+          </div>
+        </div>
+        </div>
+
+        <div class="card-footer item-title">Typ povrchu: <span id="rec-sidewalk-surface" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Kvalita povrchu: <span id="rec-sidewalk-surfQuality" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Okolí chodníku nalevo: <span id="rec-sidewalk-vicinityLeft" class="font-color-black"></span></div>
+        <div class="card-footer item-title">Okolí chodníku napravo: <span id="rec-sidewalk-vicinityRight" class="font-color-black"></span></div>
+
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+<!-- EDIT obstacle-->          
+<div data-page="sidewalk-edit" class="page cached">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding page-title">Úprava informací o chodníku</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+      <a href="#" id="button-sidewalk-edit-selection" class="button button-big button-fill color-blue">Potvrdit</a> 
+  </div>
+
+
+  <div class="page-content"> 
+
+    <div class="content-block-title">Vyberte informace, které chcete upravit</div>
+    <div class="content-block">      
+                <div class="list-block">                  
+                <ul>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                       
+                        <input type="checkbox" name="my-checkbox" value="sidewalk">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Šířka nejužšího místa</div>
+                        </div>
+                      </label>
+                    </li>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="crosswalks">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Typ a velkost sklonu</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="corners">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Typ a kvalita povrchu</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Okolí chodníku</div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

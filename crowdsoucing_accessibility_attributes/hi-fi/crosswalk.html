@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body> 
+
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed toolbar-fixed">
+
+        <div data-page="crosswalk-same-ramps" class="page">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Nájezdové plošiny přechodu</div>              
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <p class="buttons-row">
+              <a href="#crosswalk-map" id="button-crosswalk-same-ramps-no" class="button button-big color-blue">Ne</a>
+              <a href="#crosswalk-menu" id="button-crosswalk-same-ramps-yes" class="button button-big color-blue">Ano</a>              
+            </p>             
+          </div>
+
+
+          <div class="page-content">
+          <div class="content-block-title">Jsou obě nájezdové plošiny přechodu stejné?</div> 
+          </div>
+
+        </div> 
+
+
+          <div data-page="crosswalk-menu" class="page cached">
+
+          <a href="#" class="floating-button floating-button-to-popover open-popover color-darkblue" data-popover=".popover-types">
+            <i class="icon"><img src="img/gallery3.png" class="floating-button-icon" alt="Nápoveda"></i>
+          </a> 
+
+            <div class="navbar">                             
+              <div class="navbar-inner">
+                <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+                <div class="center sliding">Typ přechodu</div>
+                <div class="right points-title">+20<br>bodů</div>
+              </div>
+            </div>
+
+            <div class="toolbar">           
+              <p class="buttons-row">
+                <a href="#crosswalk-map" id="button-crosswalk-hand" class="button button-big color-blue">Zadat ručne</a>
+                <a href="#" id="button-crosswalk-menu" class="button button-big button-fill color-blue disabled">Pokračovat</a>              
+              </p>             
+            </div>
+
+            <div class="page-content">
+
+          <!-- Popover -->
+              <div class="popover popover-types">
+                <div class="popover-inner">
+                  <div class="list-block">
+                    <img src="img/tactile_elements.jpg" class="popover-icon" alt="Pásy pro nevidomé">
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">Vyberte jeden z typů a upravte jeho vlastnosti nebo zadejte vlastnosti přechodu ručně</div>
+
+
+              <label class="label-radio item-content label-yellow">
+                <input type="radio" name="crosswalk-menu-radio" value="type1">
+                <div class="card card-crosswalks-types item-inner">
+                 <div class="card-content">
+                  <div class="card-content-inner"><img src="img/crosswalk_typ1.png" alt="Typ prechodu"></div>
+                </div>            
+                <div class="card-footer">
+                  <div class="item-title list-block accordion-list">                  
+                    <ul>
+                      <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title crosswalk-type-title font-color-black">souvislý přechod s bezbariérovým nájezdem</div>
+                        </div></a>
+                        <div class="accordion-item-content">
+                          <div class="content-block">
+                            <p>Vlastnosti přechodu (stejné pro obě nájazdové plošiny přechodu):</p>
+
+                            <div class="list-block">
+                              <ul>                                
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg" disabled>                                   
+                                    <input type="checkbox" name="my-checkbox" value="barrierFree" checked="checked">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">bezbariérový nájezd</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg" disabled>                                   
+                                    <input type="checkbox" name="my-checkbox" value="classic" checked="checked">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">souvislý přechod</div>
+                                    </div>
+                                  </label>
+                                </li>                                
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="signal" checked="checked" id="crosswalk-type1-signalLine">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">signální pás</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="warning" checked="checked" id="crosswalk-type1-warningLine">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">varovný pás</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="leading" checked="checked" id="crosswalk-type1-leadingLine">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">vodící pás</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="semafor" checked="checked" id="crosswalk-type1-semafor">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">semafor</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="audio" checked="checked" id="crosswalk-type1-audio">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">audio</div>
+                                    </div>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="label-checkbox item-content label-nobg">
+                                    <input type="checkbox" name="my-checkbox" value="signalButton" checked="checked" id="crosswalk-type1-signalButton">
+                                    <div class="item-media">
+                                      <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                      <div class="item-title">signální tlačítko</div>
+                                    </div>
+                                  </label>
+                                </li>                              
+                              </ul>
+                            </div>                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul> 
+                  </div>
+                </div>
+              </div>
+            </label>
+
+            <label class="label-radio item-content label-yellow">
+              <input type="radio" name="crosswalk-menu-radio" value="type2">
+              <div class="card card-crosswalks-types item-inner">
+               <div class="card-content">
+                <div class="card-content-inner"><img src="img/crosswalk_type2.png" alt="Typ prechodu"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title list-block accordion-list">                  
+                  <ul>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                      <div class="item-inner">
+                        <div class="item-title crosswalk-type-title font-color-black">souvislý přechod s obrubníkovým nájezdem</div>
+                      </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Vlastnosti přechodu (stejné pro obě nájazdové plošiny přechodu):</p>
+
+                          <div class="list-block">
+                            <ul>                                
+                              <li>
+                                <label class="label-checkbox item-content label-nobg" disabled>
+                                  <input type="checkbox" name="my-checkbox" value="curb" checked="checked">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">nájezd s obrubníkem<br>větším než 2 cm</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg" disabled>                                   
+                                  <input type="checkbox" name="my-checkbox" value="classic" checked="checked">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">souvislý přechod</div>
+                                  </div>
+                                </label>
+                              </li>                                
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="signal" checked="checked" id="crosswalk-type2-signalLine">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">signální pás</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="warning" checked="checked" id="crosswalk-type2-warningLine">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">varovný pás</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="leading" checked="checked" id="crosswalk-type2-leadingLine">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">vodící pás</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="semafor" checked="checked" id="crosswalk-type2-semafor">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">semafor</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="audio" checked="checked" id="crosswalk-type2-audio">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">audio</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="label-checkbox item-content label-nobg">
+                                  <input type="checkbox" name="my-checkbox" value="signalButton" checked="checked" id="crosswalk-type2-signalButton">
+                                  <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                  </div>
+                                  <div class="item-inner">
+                                    <div class="item-title">signální tlačítko</div>
+                                  </div>
+                                </label>
+                              </li>                              
+                            </ul>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </label>
+         
+    </div>
+
+  </div>
+
+  <!-- MAP Page-->          
+  <div data-page="crosswalk-map" class="page cached">
+
+    <div class="navbar" id="navbar-crosswalk-map">
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index" id="back-crosswalk-map"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Vyberte jednu ze dvou nájezdových plošin přechodu, kterou budete zaznačovat jako první</div>
+        <div class="right" id="points-crosswalk-map"><div id="points-corner">+4<br>body</div></div>
+      </div>
+    </div>
+
+    <div class="toolbar">           
+      <a href="#crosswalk-ramp" id="button-crosswalk-select-ramp" class="button button-big button-fill disabled">Pokračovat</a>             
+    </div>
+
+
+    <div class="page-content">              
+      <div id="map-canvas1"></div>
+      <div id="map-canvas2"></div>   
+    </div>
+
+  </div>          
+
+
+  <!-- RAMP PAGE-->
+  <div data-page="crosswalk-ramp" class="page cached">
+
+    <div class="navbar">                             
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Typ nájezdu</div>
+        <div class="right points-title">+2<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+
+      <a href="#crosswalk-strip" id="button-crosswalk-select-rampType" class="button button-big button-fill disabled">Pokračovat</a>
+
+    </div>
+
+    <div class="page-content">
+      <div class="content-block-title">Vyberte typ nájezdu plošiny</div>
+
+      <label class="label-radio item-content label-yellow">
+        <input type="radio" name="crosswalk-rampType-radio" value="barrierFree">
+        <div class="card crosswalk-card item-inner">
+         <div class="card-content">
+          <div class="card-content-inner"><img src="img/ramp_free.png" alt="Bezbarierový nájezd"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">bezbarierový nájezd</div>
+        </div>
+      </div>
+    </label>
+
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="crosswalk-rampType-radio" value="barrier">
+      <div class="card crosswalk-card item-inner">
+        <div class="card-content">
+          <div class="card-content-inner"><img src="img/ramp_barrier.png" alt="Barierový nájezd"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">nájezd s obrubníkem větším než 2 cm</div>
+        </div>
+      </div>
+    </label>
+
+  </div>
+
+
+
+</div>
+
+
+<!--STRIP PAGE-->
+<div data-page="crosswalk-strip" class="page cached">
+
+  <a href="#" class="floating-button floating-button-to-popover open-popover color-darkblue" data-popover=".popover-strips">
+    <i class="icon"><img src="img/gallery3.png" class="floating-button-icon" alt="Nápověda"></i>
+  </a> 
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Značení pro zrakově postižené chodce</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <a href="#crosswalk-surface" id="button-crosswalk-select-strip" class="button button-big button-fill">Pokračovat</a>
+  </div>
+
+  <div class="page-content">
+
+    <!-- Popover -->
+    <div class="popover popover-strips">
+      <div class="popover-inner">
+        <div class="list-block">
+          <img src="img/tactile_elements.jpg" class="popover-icon" alt="Pásy pro nevidomé">
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block-title">Vyberte značení pro zrakově postižené chodce na nájazdové plošine</div>
+
+
+    <label class="label-checkbox item-content label-yellow">
+
+      <input id="crosswalk-input-signal-strip" type="checkbox" name="crosswalk-strips-checkbox" value="signal">
+      <div class="card crosswalk-card item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/signal_strip.png" alt="Signální pás"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">signální pás</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-checkbox item-content label-yellow">            
+    <input id="crosswalk-input-warning-strip" type="checkbox" name="crosswalk-strips-checkbox" value="warning">           
+    <div class="card crosswalk-card item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/warning_strip.png" alt="Varovný pás"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">varovný pás</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="content-block-title">* Vyberte 0, 1 nebo 2 možnosti</div><br>      
+
+</div>
+
+</div>
+
+
+<!--CURB PAGE-->
+<div data-page="crosswalk-curb" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Výška obrubníku</div>
+      <div class="right points-title">+5<br>bodů</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+
+    <a href="#" id="button-crosswalk-select-curb" class="button button-big button-fill disabled">Pokračovat</a>
+
+  </div>
+
+
+  <div class="page-content">
+
+    <div class="content-block-title">Vyberte způsob měření</div>
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="crosswalk-curb-radio" value="meter" id="crosswalk_card_meter">
+      <div class="card card-3-in-row-measure item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/meter.png" alt="Metr"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">metr</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-curb-radio" value="creditcard" id="crosswalk_card_creditcard">
+    <div class="card card-3-in-row-measure item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/creditcard.png" alt="Kreditní karta"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">kreditka</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-curb-radio" value="feet" id="crosswalk_card_feet">
+    <div class="card card-3-in-row-measure item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/feet.png" alt="Stopa"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">stopa</div>
+      </div>
+    </div>
+  </label>
+
+
+  <!-- Metr -->
+  <div class="list-block" id="crosswalk_meter_div">
+    <div class="content-block-title">Zadejte výšku obrubníku</div>
+    <ul>
+
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">Naměřená výška</div>
+            <div class="item-input">
+              <input id="crosswalk-curb-input-meter" type="number" placeholder="zadejte výšku">
+            </div>
+          </div>
+        </div>
+      </li>                 
+
+
+      <li>
+        <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+          <select name="meter-units">
+            <option class="crosswalk-curb-option-meter" value="1" selected>cm</option>
+            <option class="crosswalk-curb-option-meter" value="100">m</option>
+            <option class="crosswalk-curb-option-meter" value="0.1">mm</option>
+
+          </select>
+          <div class="item-content">
+            <div class="item-inner">                    
+              <div class="item-title">Jednotky</div>
+              <div class="item-after">cm</div>
+            </div>
+          </div>
+        </a>
+      </li>  
+    </ul>
+  </div>
+
+
+  <!-- Kreditní karta -->        
+  <div class="list-block" id="crosswalk_creditcard_div">
+    <div class="content-block-title">Zadejte výšku obrubníku</div>
+    <ul>
+
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">Počet kreditek</div>
+            <div class="item-input">
+              <input id="crosswalk-curb-input-creditcard" type="number" placeholder="zadejte počet kreditek">
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+          <select name="creditcard-units">
+            <option class="crosswalk-curb-option-creditcard" value="8.56" selected>po šířce</option>
+            <option class="crosswalk-curb-option-creditcard" value="5.398">po výšce</option>
+
+          </select>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">Kreditní karta</div>
+              <div class="item-after">po šířce</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- STOPA -->       
+  <div class="list-block" id="crosswalk_feet_div">
+   <div class="content-block-title">Zadejte výšku obrubníku</div>
+   <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Počet stop</div>
+          <div class="item-input">
+            <input id="crosswalk-curb-input-feet" type="number" placeholder="zadejte počet stop">
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a href="#" class="item-link smart-select" data-page-title="Velkost boty v EU číslování" data-back-text=" " data-back-on-select="true">
+
+        <select name="feet-units">
+          <optgroup label="Dámské číslování">
+            <option class="crosswalk-curb-option-feet" value="21.3">35 (21.3 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="22.2">36 (22.2 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="23">37 (23 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="23.8">38 (23.8 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="24.6">39 (24.6 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="25.4" selected>40 (25.4 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="26.2">41 (26.2 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="27.1">42 (27.1 cm)</option>                                                      
+          </optgroup>
+
+          <optgroup label="Pánské číslování">
+            <option class="crosswalk-curb-option-feet" value="23.5">39 (23.5 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="24.4">40 (24.4 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="25.4">41 (25.4 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="26">42 (26 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="27">43 (27 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="27.9">44 (27.9 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="28.6">45 (28.6 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="29.4">46 (29.4 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="30.2">47 (30.2 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="31">48 (31 cm)</option>
+            <option class="crosswalk-curb-option-feet" value="31.8">49 (31.8 cm)</option>
+          </optgroup>
+        </select>
+
+
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Velkost boty</div>
+            <div class="item-after">40</div>
+          </div>
+        </div>
+      </a>
+    </li>
+
+  </ul>
+</div>
+</div>
+</div>
+
+<!--SURFACE PAGE-->
+<div data-page="crosswalk-surface" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Povrch nájezdové plošiny</div>
+      <div class="right points-title">+3<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+
+    <p class="buttons-row">
+      <a href="#" id="button-crosswalk-select-surface-skip" class="button button-big color-bluegray">Přeskočit</a>
+      <a href="#" id="button-crosswalk-select-surface" class="button button-big button-fill color-blue disabled">Pokračovat</a>
+    </p>
+
+  </div>
+
+
+
+
+  <div class="page-content">
+
+
+    <div class="content-block-title">Vyberte typ povrchu nájezdové plošiny</div>
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="crosswalk-surface-radio" value="asphalt">
+      <div class="card card-surface item-inner">          
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_asphalt.png" alt="Asfalt"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">asfalt</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-surface-radio" value="stones">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_stones.png" alt="Kamínky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">kamínky</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-surface-radio" value="smallCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs_small.png" alt="Malé kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">malé kostky</div>
+      </div>
+    </div>
+  </label>
+
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-surface-radio" value="bigCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs.png" alt="Velké kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">velké kostky</div>
+      </div>
+    </div>
+  </label> 
+
+
+  <div class="list-block" id="crosswalk_surfaceQuality_div">
+    <div class="content-block-title">Zadejte kvalitu povrchu</div>
+    <ul>
+
+      <li>
+        <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+          <select name="quality">
+            <option class="crosswalk-quality-option" value="1" selected>velmi dobrá</option>
+            <option class="crosswalk-quality-option" value="2">dobrá</option>
+            <option class="crosswalk-quality-option" value="3">špatná</option>
+
+          </select>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">Hodnocení kvality</div>
+              <div class="item-after">velmi dobrá</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> 
+</div>
+
+<!-- SECOND RAMP-->
+<div data-page="crosswalk-ramp2" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Druhá nájezdová plošina</div>
+      <div class="right points-title">+5<br>bodů</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+
+    <p class="buttons-row">
+      <a href="#crosswalk-ramp" id="button-second-ramp-no" class="button button-big color-blue">Ne</a>
+      <a href="#crosswalk-zebra-type" id="button-second-ramp-yes" class="button button-big color-blue">Ano</a>              
+    </p>
+
+  </div>
+
+  <div class="page-content">
+
+    <div class="content-block-title content-block-title-questions">Má nájezdová plošina na druhé straně přechodu stejné vlastnosti jako aktuální plošina?</div>
+
+
+  </div>
+
+</div>
+
+<!-- ZEBRA TYPE -->
+<div data-page="crosswalk-zebra-type" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Typ přechodu</div>
+      <div class="right points-title">+2<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+
+    <a href="#crosswalk-zebra-properties" id="button-crosswalk-select-zebraType" class="button button-big button-fill disabled">Pokračovat</a>
+
+  </div>
+
+  <div class="page-content">
+    <div class="content-block-title">Vyberte typ přechodu</div>
+
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="crosswalk-zebraType-radio" value="classic">
+      <div class="card card-crosswalk-zebra-type item-inner">
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/zebra_classic.png" alt="Souvislý přechod"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">souvislý přechod</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-zebraType-radio" value="island">
+    <div class="card card-crosswalk-zebra-type item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/zebra_island.png" alt="Ostrůvek"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">ostrůvek</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-zebraType-radio" value="strip">
+    <div class="card card-crosswalk-zebra-type item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/zebra_strip.png" alt="Delící pás"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">delící pás</div>
+      </div>
+    </div>
+  </label>
+
+</div>
+
+</div>  
+
+
+<!-- ZEBRA PROPERTIES -->
+<div data-page="crosswalk-zebra-properties" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Vlastnosti přechodu</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">    
+    <p class="buttons-row">
+      <a href="#crosswalk-zebra-drivingLines" id="button-crosswalk-select-properties-skip" class="button button-big color-bluegray">Přeskočit</a>
+      <a href="#crosswalk-zebra-drivingLines" id="button-crosswalk-select-properties" class="button button-big button-fill color-blue">Pokračovat</a>
+    </p>
+  </div>
+
+  <div class="page-content">
+
+    <div class="content-block-title">Vyberte vlastnosti přechodu</div>
+    <label class="label-checkbox item-content label-yellow">
+      <input type="checkbox" id="crosswalk-input-zebra-leading" name="crosswalk-zebraProp-radio" value="leadingStrip">
+      <div class="card card-surface item-inner">          
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/leading_strip.png" alt="Vodící pás"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">vodící pás</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-checkbox item-content label-yellow">
+    <input type="checkbox" id="crosswalk-input-zebra-semafor" name="crosswalk-zebraProp-radio" value="semafor">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/semafor.png" alt="Semafor"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">semafor</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-checkbox item-content label-yellow">
+    <input type="checkbox" id="crosswalk-input-zebra-audio" name="crosswalk-zebraProp-radio" value="audio">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/audio.png" alt="Audio"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">audio</div>
+      </div>
+    </div>
+  </label>
+
+
+  <label class="label-checkbox item-content label-yellow">
+    <input type="checkbox" id="crosswalk-input-zebra-signal" name="crosswalk-zebraProp-radio" value="signal">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/signal.png" alt="Signální tlačítko"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">tlačítko</div>
+      </div>
+    </div>
+  </label> 
+
+</div> 
+</div>
+
+<!-- DRIVING LINES -->
+<div data-page="crosswalk-zebra-drivingLines" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Počet jízdních pruhů</div>
+      <div class="right points-title">+2<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <a href="#crosswalk-zebra-surface" id="button-crosswalk-select-drivingLines" class="button button-big button-fill">Pokračovat</a>
+  </div>
+
+
+
+  <div class="page-content">
+
+    <div class="list-block" id="crosswalk_drivingLines_div">
+      <div class="content-block-title">Zadejte počet jídních pruhů, které vedou cez přechod</div>
+      <ul>
+
+        <li>
+          <a href="#" class="item-link smart-select" data-back-text=" " data-back-on-select="true">
+            <select name="drivingLines">
+              <option class="crosswalk-zebra-drivingLines" value="1" selected>1</option>
+              <option class="crosswalk-zebra-drivingLines" value="2">2</option>
+              <option class="crosswalk-zebra-drivingLines" value="3">3</option>
+              <option class="crosswalk-zebra-drivingLines" value="4">4</option>
+
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Počet jízdních pruhů</div>
+                <div class="item-after">1</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> 
+</div>
+
+<!-- ZEBRA SURFACE -->
+<div data-page="crosswalk-zebra-surface" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Povrch přechodu</div>
+      <div class="right points-title">+3<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <p class="buttons-row">
+      <a href="#crosswalk-recapitulation" id="button-crosswalk-zebra-select-surface-skip" class="button button-big color-bluegray">Přeskočit</a>
+      <a href="#crosswalk-recapitulation" id="button-crosswalk-zebra-select-surface" class="button button-big button-fill color-blue disabled">Pokračovat</a>
+    </p>
+  </div>
+
+  <div class="page-content">
+    <div class="content-block-title">Vyberte typ povrchu přechodu</div>
+    <label class="label-radio item-content label-yellow">
+      <input type="radio" name="crosswalk-zebra-surface-radio" value="asphalt">
+      <div class="card card-surface item-inner">          
+       <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_asphalt.png" alt="Asfalt"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">asfalt</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-zebra-surface-radio" value="stones">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_stones.png" alt="Kamínky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">kamínky</div>
+      </div>
+    </div>
+  </label>
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-zebra-surface-radio" value="smallCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs_small.png" alt="Malé kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">malé kostky</div>
+      </div>
+    </div>
+  </label>
+
+
+  <label class="label-radio item-content label-yellow">
+    <input type="radio" name="crosswalk-zebra-surface-radio" value="bigCubes">
+    <div class="card card-surface item-inner">
+      <div class="card-content">
+        <div class="card-content-inner"><img src="img/surface_curbs.png" alt="Velké kostky"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">velké kostky</div>
+      </div>
+    </div>
+  </label> 
+
+
+  <div class="list-block" id="crosswalk-zebra-surfaceQuality-div">
+    <div class="content-block-title">Zadejte kvalitu povrchu</div>
+    <ul>
+
+      <li>
+        <a href="#" class="item-link smart-select" data-back-text=" " data-back-on-select="true">
+          <select name="zebra-quality">
+            <option class="crosswalk-zebra-quality-option" value="1" selected>velmi dobrá</option>
+            <option class="crosswalk-zebra-quality-option" value="2">dobrá</option>
+            <option class="crosswalk-zebra-quality-option" value="3">špatná</option>
+
+          </select>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">Hodnocení kvality</div>
+              <div class="item-after">velmi dobrá</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> 
+</div>
+
+
+<!-- ccrosswalk recapitul -->
+<div data-page="crosswalk-recapitulation" class="page cached">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Vlastnosti přechodu a nájazdových plošin</div>      
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <a href="#" id="button-crosswalk-recapitulation" class="button button-big button-fill">Potvrdit</a>
+  </div>
+
+
+
+  <div class="page-content">
+
+    <div class="content-block-title">Zkontrolujte zadané informace</div>
+    <div class="list-block cards-list">
+      <ul>        
+        <li class="card">
+          <div class="card-header" id="map-canvas3"></div>
+          <div class="card-footer item-title">Typ nájezdu: <span id="rec-crosswalk-curbType1" class="font-color-black"></span> <span id="rec-crosswalk-curbHeight1" class="font-color-black"></span></div>
+          <div class="card-footer item-title">
+
+            <div class="card-content">
+              <div class="list-block media-list">
+
+                <div class="item-title" id="strip-title">Značení pro zrakově postižené chodce: </div>
+                
+                <div class="card card-2-in-row">          
+                 <div class="card-content">
+                  <div class="card-content-inner" id="rec-crosswalk-signal-strip1"></div>
+                </div>
+                <div class="card-footer">
+                  <div class="item-title footer-title-center">signální pás</div>
+                </div>
+              </div>
+
+              <div class="card card-2-in-row">          
+               <div class="card-content">
+                <div class="card-content-inner" id="rec-crosswalk-warning-strip1"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">varovný pás</div>
+              </div>
+            </div> 
+          </div>
+        </div>           
+      </div>
+      <div class="card-footer item-title">Povrch: <span id="rec-crosswalk-surface1" class="font-color-black"></span></div>
+      <div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-surfQuality1" class="font-color-black"></span></div>
+    </li>
+
+    <li class="card">
+      <div class="card-header" id="map-canvas4"></div>
+      <div class="card-footer item-title">Typ nájezdu: <span id="rec-crosswalk-curbType2" class="font-color-black"></span> <span id="rec-crosswalk-curbHeight2" class="font-color-black"></span></div>
+      <div class="card-footer item-title">
+
+        <div class="card-content">
+          <div class="list-block media-list">            
+
+            <div class="item-title" id="strip-title2">Značení pro zrakově postižené chodce: </div>
+
+            <div class="card card-2-in-row">          
+             <div class="card-content">
+              <div class="card-content-inner" id="rec-crosswalk-signal-strip2"></div>
+            </div>
+            <div class="card-footer">
+              <div class="item-title footer-title-center">signální pás</div>
+            </div>
+          </div>
+
+          <div class="card card-2-in-row">          
+           <div class="card-content">
+            <div class="card-content-inner" id="rec-crosswalk-warning-strip2"></div>
+          </div>
+          <div class="card-footer">
+            <div class="item-title footer-title-center">varovný pás</div>
+          </div>
+        </div> 
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer item-title">Povrch: <span id="rec-crosswalk-surface2" class="font-color-black"></span></div>                  
+  <div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-surfQuality2" class="font-color-black"></span></div>
+
+</li>
+
+
+<li class="card">
+  <div class="card-header" id="map-canvas5"></div>
+  <div class="card-footer item-title">Typ přechodu: <span id="rec-crosswalk-zebra-type" class="font-color-black"></span></div>
+  <div class="card-footer item-title">
+
+    <div class="card-content">
+      <div class="list-block media-list">
+
+      <div class="item-title" id="properties-title">Vlastnosti přechodu: </div>            
+        
+        <div class="card card-2-in-row-prop">          
+         <div class="card-content">
+          <div class="card-content-inner" id="rec-crosswalk-zebra-leading"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">vodící pás</div>
+        </div>
+      </div>
+
+      <div class="card card-2-in-row-prop">          
+       <div class="card-content">
+        <div class="card-content-inner" id="rec-crosswalk-zebra-semafor"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">semafor</div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card card-2-in-row-prop">          
+     <div class="card-content">
+      <div class="card-content-inner" id="rec-crosswalk-zebra-audio"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">audio</div>
+    </div>
+  </div>
+
+  <div class="card card-2-in-row-prop">          
+   <div class="card-content">
+    <div class="card-content-inner" id="rec-crosswalk-zebra-signal"></div>
+  </div>
+  <div class="card-footer">
+    <div class="item-title footer-title-center">tlačítko</div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="card-footer item-title">Počet jídních pruhů: <span id="rec-crosswalk-zebra-drivingLines" class="font-color-black"></span></div>
+<div class="card-footer item-title">Povrch: <span id="rec-crosswalk-zebra-surface" class="font-color-black"></span></div>                  
+<div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-zebra-surfQuality" class="font-color-black"></span></div>
+</li>
+
+</ul>
+</div>
+</div>
+
+
+</div> 
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>   
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg">    
+</script>
+</body>
+</html>

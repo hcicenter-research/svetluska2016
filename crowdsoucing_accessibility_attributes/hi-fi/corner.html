@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body> 
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="corner-shape" class="page">
+
+
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+                <div class="center sliding">Tvar rohu</div>
+                <div class="right points-title">+3<br>body</div>
+              </div>
+            </div>
+
+            
+            <div class="toolbar">
+              <a href="#" id="button-confirm-corner" class="button button-big button-fill disabled">Potvrdit</a>              
+            </div>
+
+            
+            <div class="page-content" >
+            <div class="content-block-title">Vyberte tvar rohu</div>
+            
+
+              <label class="label-radio item-content label-yellow">
+                <input type="radio" name="corner-shape-radio" value="round">
+                <div class="card card-corner item-inner">
+                 <div class="card-content">
+                  <div class="card-content-inner card-content-inner-corner"><img src="img/corner_round.png" alt="Oblý roh"></div>
+                </div>
+                <div class="card-footer">
+                  <div class="item-title footer-title-center">kulatý (x > 0.5m)</div>
+                </div>
+              </div>
+            </label>
+
+            <label class="label-radio item-content label-yellow">
+              <input type="radio" name="corner-shape-radio" value="sharp">
+              <div class="card card-corner item-inner">
+                <div class="card-content">
+                  <div class="card-content-inner card-content-inner-corner"><img src="img/corner_sharp.png" alt="Ostrý roh"></div>
+                </div>
+                <div class="card-footer">
+                  <div class="item-title footer-title-center">ostrý</div>
+                </div>
+              </div>
+            </label>
+
+            <label class="label-radio item-content label-yellow">
+              <input type="radio" name="corner-shape-radio" value="refracted">
+              <div class="card card-corner item-inner">
+                <div class="card-content">
+                  <div class="card-content-inner card-content-inner-corner"><img src="img/corner_refracted.png" alt="Lomený roh"></div>
+                </div>
+                <div class="card-footer">  
+                  <div class="item-title footer-title-center">lomený (x > 1m)</div>
+                </div>
+              </div>
+            </label>
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>    
+<script type="text/javascript" src="js/my-app.js"></script>
+    
+</body>
+</html>

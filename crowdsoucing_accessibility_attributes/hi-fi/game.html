@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="game-body"> 
+ 
+ <div class="views">
+  <div id="view-2" class="view view-main">
+
+      <div class="navbar" data-page="profile">
+        <div class="navbar-inner">
+          <div class="left sliding back-to-index no-animation"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+          <div class="center sliding instruction">Game</div>
+        </div>
+      </div>
+
+      <div class="pages navbar-through">
+        <div class="page" data-page="profile">
+          
+
+          <div class="page-content">
+
+            <div class="content-block content-block-game">
+              <div class="buttons-row">
+              <ul class="game-nav">                
+                <li><a href="#profile-tab" class="tab-link active">Profil</a></li>                
+                <li><a href="#badges-tab" class="tab-link">Odznaky</a></li>
+              </ul>    
+              </div>
+            </div>
+            
+  
+            <div class="tabs">
+             
+              <div id="profile-tab" class="tab active">
+                <div class="content-block content-block-game" >
+                  
+                  
+                    <div class="content-block-inner" id="game-block-profile">
+
+
+                    <img src="img/user1.png" id="user-avatar" alt="Uživatelské jméno">
+                    <p id="user-name">Adam</p>
+
+                  <div class="profile-values"><span id="points-monthly"></span><br><hr>
+                  <span id="points-overall"></span>
+                  <span class="icons-text-game">body</span></div>
+
+                  <div class="profile-values"><span class="star-icon full">☆</span>
+                    <span class="star-icon full">☆</span>
+                    <span class="star-icon half">☆</span>
+                    <span class="icons-text-game">důvěryhodnost</span>
+                  </div>
+
+                   <div class="profile-values"><span id="badges">2</span>
+                    <span class="icons-text-game">odznaky</span>
+                  </div>
+                      
+                    </div>
+                  
+
+                  
+                  <div class="content-block content-block-game">                   
+                    <div class="content-block-inner">
+
+                    
+                      <div class="content-block-title" id="leaderboard-title">Žebříček</div>
+                      <div class="buttons-row">
+                        
+                        <a href="#monthly" class="tab-link active button button-leaderboard">měsíční</a>
+                        
+                        <a href="#overall" class="tab-link button button-leaderboard">celkový</a>                        
+                       
+                      </div>
+                    
+                    
+                    <div class="tabs">
+                      
+                      <div id="monthly" class="tab active">
+                        <div class="content-block">
+                          <img src="img/leaderboard_list_monthly.png" class="leaderboard_list" alt="Měsíční tabulka">
+                        </div>
+                      </div>
+                      
+                      <div id="overall" class="tab">
+                        <div class="content-block">
+                          <img src="img/leaderboard_list_overall.png" class="leaderboard_list" alt="Celková tabulka">                         
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+             
+              <div id="badges-tab" class="tab">
+                <div class="content-block content-block-game">
+                  <div class="content-block-inner" id="game-block-badges">
+
+                     <div class="content-block-title" id="badges-challenge-title">Aktuální výzva</div>
+                      <p>1.5.-31.5.2017</p>
+                  <img src="img/plus_points.png" id="badges-plus-points-icon" alt="Body">
+                   
+
+                    <svg version="1.1" id="svg-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="200px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                      
+                      <defs>
+                          <linearGradient id="quotaDonut__gradient">
+                            <stop stop-color="#00659a" offset="0%"></stop>
+                            <stop stop-color="#4089db" class="quotaDonut__gradientStopEnd" offset="100%"></stop>
+                          </linearGradient>
+                        </defs>
+
+                      <g transform="translate(115, 115)">
+                        <circle r="100" class="circle-back" />
+                        <circle r="115" class="circle-border" />
+                        <circle r="85"  class="circle-border" />
+                        <circle r="100" class="circle-front" />
+                      </g>
+                      
+                    </svg>
+
+                    <img src="img/game_cup.png" id="game-cup-icon" alt="Pohář">
+                    <span id="game-challenge-percentage"></span>
+                    <p id="game-challenge-task"><span id="task-crosswalk">šedý přechod</span> + <span id="task-newobstacle">nová překážka</span> + <span id="task-sidewalk">šedý chodník</span> + <span id="task-valobstacle">kontrola platnosti překážky</span> + <span id="task-corner">ověření rohu</span></p>
+                    <a href="#" id="button-continue-challenge" class="button button-big button-fill"></a>
+
+                  </div>
+                </div>
+
+                <div class="content-block" >
+
+                    <div class="content-block-inner" id="badges-list-block">
+                    <div class="content-block-title" id="badges-title">Odznaky</div>
+                    <img src="img/badges.png" id="badges-list" alt="Odznaky">
+                    </div>
+                </div>
+
+
+              </div>    
+            </div> 
+        </div> 
+
+    </div>
+
+          
+
+
+          </div>
+          
+        </div>
+
+        
+
+    </div>
+
+    <script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+      <script type="text/javascript" src="js/my-app.js"></script>     
+  </body>
+  </html>
+
+
+             

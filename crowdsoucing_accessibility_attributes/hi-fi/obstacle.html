@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+
+        <!-- MAP Page-->          
+        <div data-page="obstacle-map" class="page">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Umístěte překážku tahem mapy</div>
+              <div class="right points-title">+4<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <a href="#obstacle-position" id="button-obstacle-select-map-position" class="button button-big button-fill">Pokračovat</a>             
+          </div>
+
+
+          <div class="page-content">              
+            <div id="map-canvas-obstacle"></div>                
+          </div>
+
+        </div>
+
+        <!-- POSITION Page-->          
+        <div data-page="obstacle-position" class="page cached">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Poloha překážky na chodníku</div>
+              <div class="right points-title">+3<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <a href="#obstacle-passable-width" id="button-obstacle-select-position" class="button button-big button-fill">Pokračovat</a>             
+          </div>
+
+
+          <div class="page-content">              
+            <div class="content-block-title">Otočte se ve směru nejbližšího jízdního pruhu a zadejte polohu překážky na chodníku</div>
+
+            <div class="list-block" >
+
+              <ul>
+                <li>
+                  <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                    <select name="obstacle-position">
+                      <option class="obstacle-position-option" value="left" >nalevo</option>
+                      <option class="obstacle-position-option" value="right">napravo</option>
+                      <option class="obstacle-position-option" value="center" selected>uprostřed</option>
+                    </select>
+                    <div class="item-content">
+                      <div class="item-inner">                    
+                        <div class="item-title">Poloha překážky</div>
+                        <div class="item-after">uprostřed</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+            </div>       
+
+          </div> 
+        </div>
+
+
+        <!-- PAssable width Page-->          
+        <div data-page="obstacle-passable-width" class="page cached">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Přechodná šířka chodníku</div>
+              <div class="right points-title">+3<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">           
+            <a href="#obstacle-type" id="button-obstacle-select-passable-width" class="button button-big button-fill">Pokračovat</a>             
+          </div>
+
+
+          <div class="page-content">              
+            <div class="content-block-title">Zadejte přechodnou šířku kolem překážky na chodníku
+            <img id="obstacle-passable-width-image" alt="Přechodná šířka" src="#">
+            </div>
+
+            <div class="list-block">
+              <ul>                
+                <li>
+                  <div class="item-content">           
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <div class="range-slider">
+                          <input class="range-slider-range" type="range" value="0" min="0" max="100">
+                          přechodná šířka: <span class="range-slider-value" id="range-slider-actualValue">0</span>%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>       
+
+          </div> 
+        </div>
+
+
+        <!-- Obstacle type Page-->
+        <div data-page="obstacle-type" class="page cached">
+
+          <div class="navbar">                             
+            <div class="navbar-inner">
+              <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+              <div class="center sliding">Vlastnosti přechodu</div>
+              <div class="right points-title">+2<br>body</div>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <a href="#" id="button-obstacle-select-type" class="button button-big button-fill disabled">Pokračovat</a>
+          </div>
+
+
+
+          <div class="page-content">
+
+            <div class="content-block-title">Vyberte typ překážky</div>
+
+            <label class="label-radio item-content label-yellow">
+              <input type="radio" name="obstacle-type-radio" value="hole">
+              <div class="card card-3-in-row-obstacle-type item-inner">          
+               <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_hole.png" alt="Díra"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">díra</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="pit">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_pit.png" alt="Výkopové práce"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">výkopové práce</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="terrace">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_terrace.png" alt="Terasa"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">terasa</div>
+              </div>
+            </div>
+          </label>
+
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="trashbin">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_trashbin.png" alt="Odpadkový koš"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">odpadkový koš</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="tree">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_tree.png" alt="Strom"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">strom</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="bench">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_bench.png" alt="Lavička"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">lavička</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="light">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_light.png" alt="Osvětlení"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">osvětlení</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="sign">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_sign.png" alt="Dopravní značení"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">dopravní značení</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="pole">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_pole.png" alt="Sloup"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center" >sloup</div>
+              </div>
+            </div>
+          </label>
+
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="fence">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner "><img src="img/obst_fence.png" alt="Oplocení"></div>
+              </div>
+              <div class="card-footer">
+              <div class="item-title footer-title-center">oplocení / zábradlí</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="station">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_station.png" alt="Zastávka"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">zastávka</div>
+              </div>
+            </div>
+          </label>
+
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-type-radio" value="machine">
+            <div class="card card-3-in-row-obstacle-type item-inner">
+              <div class="card-content">
+                <div class="card-content-inner"><img src="img/obst_machine.png" alt="Automat"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">automat</div>
+              </div>
+            </div>
+          </label>
+
+          <div class="list-block">
+            <ul>
+              
+              <li>
+                <label class="label-checkbox item-content">                  
+                  <input type="radio" name="obstacle-type-radio" value="other" id="input-obstacle-type">
+                  <div class="item-media">
+                    <i class="icon icon-form-checkbox"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">Jiný<input id="obstacle-type-input" type="text" placeholder="zadejte typ překážky"></div>
+
+                  </div>
+                </label>
+              </li>
+
+            </ul>
+          </div>   
+
+        </div> 
+      </div> 
+
+
+      <!-- CAMERA Page-->          
+      <div data-page="obstacle-camera" class="page cached">
+
+          <label class="floating-button color-darkblue">
+         
+            <input type="file" accept="image/*" id="obstacle-photo-input"/>
+            <i class="icon"><img src="img/input_file.png" id="floating-button-icon2" alt="Fotografie"></i>
+          
+          </label>
+
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+            <div class="center sliding">Nahrajte fotografii</div>
+            <div class="right points-title">+5<br>bodů</div>
+          </div>
+        </div>
+
+        <div class="toolbar"> 
+          <p class="buttons-row">
+              <a href="#obstacles-dimensions" id="button-obstacle-camera-skip" class="button button-big color-bluegray">Přeskočit</a>
+              <a href="#" id="button-obstacle-camera" class="button button-big button-fill color-blue">Pokračovat</a>            
+          </p>             
+        </div>
+
+
+        <div class="page-content" id="photo-input-div">
+            
+          <br>
+          <br>         
+              
+
+                 
+          <img id="obstacle-photo">
+          <div id="obstacle-res"></div> 
+        </div>
+
+      </div> 
+
+      <!-- DIMENSIONS Page-->  
+      <div data-page="obstacles-dimensions" class="page cached">
+
+        <div class="navbar">                             
+          <div class="navbar-inner">
+            <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+            <div class="center sliding">Rozměry překážky</div>
+            <div class="right points-title">+8<br>bodů</div>
+          </div>
+        </div>
+
+        <div class="toolbar">          
+          <p class="buttons-row">
+              <a href="#obstacle-durability" id="button-obstacle-select-dimensions-skip" class="button button-big color-bluegray">Přeskočit</a>
+              <a href="#" id="button-obstacle-select-dimensions" class="button button-big button-fill color-blue disabled">Pokračovat</a>            
+          </p>
+        </div>
+
+
+        <div class="page-content">
+
+          <div class="content-block-title">Vyberte způsob měření</div>
+          <label class="label-radio item-content label-yellow">
+            <input type="radio" name="obstacle-dimensions-radio" value="meter" id="obstacle_card_meter">
+            <div class="card item-inner card-3-in-row-measure">
+             <div class="card-content">
+              <div class="card-content-inner"><img src="img/meter.png" alt="Metr"></div>
+            </div>
+            <div class="card-footer">
+              <div class="item-title footer-title-center">metr</div>
+            </div>
+          </div>
+        </label>
+
+        <label class="label-radio item-content label-yellow">
+          <input type="radio" name="obstacle-dimensions-radio" value="creditcard" id="obstacle_card_creditcard">
+          <div class="card item-inner card-3-in-row-measure">
+            <div class="card-content">
+              <div class="card-content-inner"><img src="img/creditcard.png" alt="Kreditní karta"></div>
+            </div>
+            <div class="card-footer">
+              <div class="item-title footer-title-center">kreditka</div>
+            </div>
+          </div>
+        </label>
+
+        <label class="label-radio item-content label-yellow">
+          <input type="radio" name="obstacle-dimensions-radio" value="feet" id="obstacle_card_feet">
+          <div class="card item-inner card-3-in-row-measure">
+            <div class="card-content">
+              <div class="card-content-inner"><img src="img/feet.png" alt="Stopa"></div>
+            </div>
+            <div class="card-footer">
+              <div class="item-title footer-title-center">stopa</div>
+            </div>
+          </div>
+        </label>
+
+
+        <!-- Metr -->
+        <div class="list-block" id="obstacle_meter_div">
+          <div class="content-block-title">Zadejte šířku překážky</div>
+          <ul>
+
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Naměřená šířka</div>
+                  <div class="item-input">
+                    <input id="obstacle-dimensions-input-meter-width" type="number" placeholder="zadejte šířku">
+                  </div>
+                </div>
+              </div>
+            </li>                 
+
+
+            <li>
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                <select name="meter-units">
+                  <option class="obstacle-dimensions-option-meter-width" value="1" selected>cm</option>
+                  <option class="obstacle-dimensions-option-meter-width" value="100">m</option>
+                  <option class="obstacle-dimensions-option-meter-width" value="0.1">mm</option>
+                  
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">                    
+                    <div class="item-title">Jednotky</div>
+                    <div class="item-after">cm</div>
+                  </div>
+                </div>
+              </a>
+            </li>           
+
+          </ul>
+          <div class="content-block-title">Zadejte délku překážky</div>
+          <ul>
+
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Naměřená délka</div>
+                  <div class="item-input">
+                    <input id="obstacle-dimensions-input-meter-length" type="number" placeholder="zadejte délku">
+                  </div>
+                </div>
+              </div>
+            </li>                 
+
+
+            <li>
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                <select name="meter-units">
+                  <option class="obstacle-dimensions-option-meter-length" value="1" selected>cm</option>
+                  <option class="obstacle-dimensions-option-meter-length" value="100">m</option>
+                  <option class="obstacle-dimensions-option-meter-length" value="0.1">mm</option>
+                  
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">                    
+                    <div class="item-title">Jednotky</div>
+                    <div class="item-after">cm</div>
+                  </div>
+                </div>
+              </a>
+            </li>           
+
+          </ul>
+        </div>
+
+
+        <!-- Kreditní karta -->        
+        <div class="list-block" id="obstacle_creditcard_div">
+          <div class="content-block-title">Zadejte šířku překážky</div>
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Počet kreditek</div>
+                  <div class="item-input">
+                    <input id="obstacle-dimensions-input-creditcard-width" type="number" placeholder="zadejte počet kreditek">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                <select name="creditcard-units">
+                  <option class="obstacle-dimensions-option-creditcard-width" value="8.56" selected>po šířce</option>
+                  <option class="obstacle-dimensions-option-creditcard-width" value="5.398">po výšce</option>
+
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kreditní karta</div>
+                    <div class="item-after">po šířce</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="content-block-title">Zadejte délku překážky</div>
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Počet kreditek</div>
+                  <div class="item-input">
+                    <input id="obstacle-dimensions-input-creditcard-length" type="number" placeholder="zadejte počet kreditek">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+                <select name="creditcard-units">
+                  <option class="obstacle-dimensions-option-creditcard-length" value="8.56" selected>po šířce</option>
+                  <option class="obstacle-dimensions-option-creditcard-length" value="5.398">po výšce</option>
+
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kreditní karta</div>
+                    <div class="item-after">po šířce</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <!-- STOPA -->       
+        <div class="list-block" id="obstacle_feet_div">
+         <div class="content-block-title">Zadejte šířku překážky</div>
+         <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Počet stop</div>
+                <div class="item-input">
+                  <input id="obstacle-dimensions-input-feet-width" type="number" placeholder="zadejte počet stop">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="item-link smart-select" data-page-title="Velkost boty v EU číslování" data-back-text=" " data-back-on-select="true">
+
+              <select name="feet-units">
+                <optgroup label="Dámské číslování">
+                  <option class="obstacle-dimensions-option-feet-width" value="21.3">35 (21.3 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="22.2">36 (22.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="23">37 (23 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="23.8">38 (23.8 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="24.6">39 (24.6 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="25.4" selected>40 (25.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="26.2">41 (26.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="27.1">42 (27.1 cm)</option>                                                      
+                </optgroup>
+
+                <optgroup label="Pánské číslování">
+                  <option class="obstacle-dimensions-option-feet-width" value="23.5">39 (23.5 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="24.4">40 (24.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="25.4">41 (25.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="26">42 (26 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="27">43 (27 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="27.9">44 (27.9 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="28.6">45 (28.6 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="29.4">46 (29.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="30.2">47 (30.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="31">48 (31 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-width" value="31.8">49 (31.8 cm)</option>
+                </optgroup>
+              </select>
+
+
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Velkost boty</div>
+                  <div class="item-after">40</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="content-block-title">Zadejte délku překážky</div>
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Počet stop</div>
+                <div class="item-input">
+                  <input id="obstacle-dimensions-input-feet-length" type="number" placeholder="zadejte počet stop">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="item-link smart-select" data-page-title="Velkost boty v EU číslování" data-back-text=" " data-back-on-select="true">
+
+              <select name="feet-units">
+                <optgroup label="Dámské číslování">
+                  <option class="obstacle-dimensions-option-feet-length" value="21.3">35 (21.3 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="22.2">36 (22.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="23">37 (23 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="23.8">38 (23.8 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="24.6">39 (24.6 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="25.4" selected>40 (25.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="26.2">41 (26.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="27.1">42 (27.1 cm)</option>                                                      
+                </optgroup>
+
+                <optgroup label="Pánské číslování">
+                  <option class="obstacle-dimensions-option-feet-length" value="23.5">39 (23.5 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="24.4">40 (24.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="25.4">41 (25.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="26">42 (26 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="27">43 (27 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="27.9">44 (27.9 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="28.6">45 (28.6 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="29.4">46 (29.4 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="30.2">47 (30.2 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="31">48 (31 cm)</option>
+                  <option class="obstacle-dimensions-option-feet-length" value="31.8">49 (31.8 cm)</option>
+                </optgroup>
+              </select>
+
+
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Velkost boty</div>
+                  <div class="item-after">40</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>  
+
+  <!-- durability Page-->          
+  <div data-page="obstacle-durability" class="page cached">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Trvanlivost překážky</div>
+        <div class="right points-title">+2<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">           
+      <p class="buttons-row">
+        <a href="#obstacle-recapitul" id="button-obstacle-durability-no" class="button button-big color-blue">Ne</a>
+        <a href="#obstacle-temporary" id="button-obstacle-durability-yes" class="button button-big color-blue">Ano</a>              
+      </p>             
+    </div>
+
+
+    <div class="page-content">
+    <div class="content-block-title">Je překážka dočasná?</div> 
+    </div>
+
+  </div> 
+
+  <!-- Temporary obstacle-->          
+  <div data-page="obstacle-temporary" class="page cached">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Trvanlivost překážky</div>
+        <div class="right points-title">+3<br>body</div>
+      </div>
+    </div>
+
+    <div class="toolbar">           
+      <a href="#obstacle-recapitul" id="button-obstacle-select-durability" class="button button-big button-fill">Pokračovat</a>             
+    </div>
+
+
+    <div class="page-content"> 
+
+      <div class="list-block" id="obstacle_meter_width_div">
+        <div class="content-block-title">Kdy máme překážku zkontrolovat?</div>
+        <ul>
+
+
+          <li>
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text=" ">
+              <select name="meter-units">
+                <option class="obstacle-durability" value="3" selected>3 dny</option>
+                <option class="obstacle-durability" value="7">týden</option>
+                <option class="obstacle-durability" value="30">měsíc</option>
+                <option class="obstacle-durability" value="90">tři měsíce</option>
+                <option class="obstacle-durability" value="180">půl roku</option>
+                <option class="obstacle-durability" value="360">rok</option>
+                <option class="obstacle-durability" value="365">více než rok</option>
+
+              </select>
+              <div class="item-content card-content-inner-top-margin">
+                <div class="item-inner">                    
+                  <div class="item-title">Zkontrolovat překážku o</div>
+                  <div class="item-after">3 dny</div>
+                </div>
+              </div>
+            </a>
+          </li>           
+
+        </ul>             
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RECAPITULATION obstacle-->          
+  <div data-page="obstacle-recapitul" class="page cached">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left sliding back-to-index"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+        <div class="center sliding">Kontrola zadaných informací</div>        
+      </div>
+    </div>
+
+    <div class="toolbar">           
+      <a href="#" id="button-obstacle-confirm" class="button button-big button-fill">Potvrdit</a>             
+    </div>
+
+
+    <div class="page-content"> 
+
+      <div class="content-block-title">Zkontrolujte zadané informace o překážce</div>
+      <div class="list-block cards-list">
+        <ul>        
+          <li class="card">
+            <div class="card-content">
+              
+
+               <div class="card card-recapitul-2-in-row">
+                <div class="card-header card-header-gray">Poloha</div>
+                <div class="card-content">
+                  <div class="card-content-inner" id="map-canvas-obstacle-position"></div>
+                </div>                      
+              </div>
+
+              <div class="card card-recapitul-2-in-row">
+                <div class="card-header card-header-gray">Fotografie</div>
+                <div class="card-content">
+                  <div class="card-content-inner fit-image"><img src="" id="rec-obstacle-photo"></div>
+                </div>                      
+              </div> 
+          </div>
+          <div class="card-footer item-title">Typ: <span id="rec-obstacle-type" class="font-color-black"></span></div>
+          <div class="card-footer item-title">Poloha na chodníku: <span id="rec-obstacle-position" class="font-color-black"></span></div>
+          <div class="card-footer item-title">Přechodná šířka chodníku: <span id="rec-obstacle-passableWidth" class="font-color-black"></span></div>
+          <div class="card-footer item-title">Rozměry: <span id="rec-obstacle-dimensions-width" class="font-color-black"></span><span id="rec-obstacle-dimensions-length" class="font-color-black"></span></div>
+          <div class="card-footer item-title">Trvanlivost: <span id="rec-obstacle-istemporary" class="font-color-black"></span></div>
+          <div class="card-footer item-title"><div id="rec-obstacle-durability-label"></div><span id="rec-obstacle-durability-value" class="font-color-black"></span></div>
+
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg&callback=initObstacleMap">    
+</script>
+
+</body>
+</html>

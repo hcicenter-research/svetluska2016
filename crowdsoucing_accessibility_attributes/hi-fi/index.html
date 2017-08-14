@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body> 
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-reveal">
+    <div class="content-block left-panel-menu">
+      <p id="restart-button">Odhlásit se</p>
+      <p id="about-button">O aplikaci</p>
+      <p>Nastavení</p>
+    </div>
+  </div>
+
+  <!-- Views -->
+  <div class="views tabs">
+    <!--main view-->
+    <div id="view-1" class="view view-main tab active">
+      <div class="pages">
+        <div data-page="index" class="page toolbar-fixed navbar-fixed">
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center">Začněte sběr dat kliknutím na značky pro<br>rohy a přechody nebo kliknutím na linie chodníků</div>
+            </div>
+          </div>
+          <!-- Toolbar links -->
+          <div class="toolbar">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="#" id="link-location"><img id="icon-location" src="img/location.png" alt="Lokace"></a>            
+              <a href="#" id="link-search" class="icons"><img src="img/search.png" alt="Vyhledávaní"><span class="icons-text" id="icons-text-search">vyhledávání</span></a>
+              <a href="#" id="link-game" class="icons"><img src="img/game.png" alt="Herní profil"><span class="icons-text">hra</span></a>
+              <a href="#" id="link-obstacle" class="icons"><img id="icon-obstacle" src="img/obstacle.png" alt="Nová překážka"><span class="icons-text" id="icons-text-obstacle" >nová překážka</span></a>
+              <a href="#" id="link-menu" data-panel="right" class="open-panel icons"><img id="icon-menu" src="img/menu.png" alt="Menu"></a>
+              <a href="#" id="link-map-settings" data-popover=".popover-settings" class="link open-popover"><img id="icon-map-settings" src="img/map_settings.png" alt="Nastavení"></a>
+            </div>
+          </div> 
+          
+          <div class="page-content" id="map"></div>  
+          
+          <div class="popover popover-settings">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+              <div class="content-block">
+              
+                <div class="content-block-title">Možnosti mapy</div>
+              <div id="map-settings">
+                <div class="map-setting-icon-map-div"><img id="map-setting-icon-map" src="img/mapa.png" alt="Mapa"><span class="map-setting-icons">mapa</span></div>
+                <div class="map-setting-icon-map-div"><img id="map-setting-icon-satelit" src="img/satelit.png" alt="Satelit"><span class="map-setting-icons">satelit</span></div>
+                </div>
+              <div>
+
+                <div class="content-block-title">Zobrazit</div>
+                <div class="list-block">
+                  <ul>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                       
+                        <input type="checkbox" name="my-checkbox" value="sidewalk" checked="checked">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">chodníky</div>
+                        </div>
+                      </label>
+                    </li>
+                    
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="crosswalks" checked="checked">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">přechody</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="corners" checked="checked">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">rohy</div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="label-checkbox item-content">
+                        <input type="checkbox" name="map-settings" value="obstacles" checked="checked">
+                        <div class="item-media">
+                          <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">překážky</div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+      </div>
+
+      </div>
+
+      <script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+      <script type="text/javascript" src="js/my-app.js"></script>   
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg&callback=initMap">    
+    </script>
+  </body>
+  </html>

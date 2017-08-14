@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>My App</title>
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="Framework7-1.5.4/dist/css/framework7.material.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body id="crosswalk-val">
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed toolbar-fixed">
+
+        
+
+
+<!-- ccrosswalk recapitul -->
+<div data-page="crosswalk-recapitulation" class="page">
+
+  <div class="navbar">                             
+    <div class="navbar-inner">
+      <div class="left sliding back-to-index"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+      <div class="center sliding">Ověření informací o přechode</div>
+      <div class="right points-title">+4<br>body</div>
+    </div>
+  </div>
+
+  <div class="toolbar">    
+    <p class="buttons-row">
+      <a href="#" id="button-crosswalk-validation-edit" class="button button-big color-blue">Upravit</a>
+      <a href="#" id="button-crosswalk-validation-confirm" class="button button-big button-fill color-blue">Potvrdit</a>              
+    </p> 
+  </div>
+
+
+
+  <div class="page-content">
+
+  <div id="crosswalkValidationNumber-color" class="content-block-title validationNumber-title">Stupeň ověření: <span id="rec-crosswalk-validation-status"></span></div>
+    <div class="content-block-title">Upravte nebo potvrdte informace o přechode a jeho nájezdových plošinách</div>
+    <div class="list-block cards-list">
+      <ul>        
+        <li class="card">
+          <div class="card-header" id="map-canvas3"></div>
+          <div class="card-footer item-title">Typ nájezdu: <span id="rec-crosswalk-curbType1" class="font-color-black"></span> <span id="rec-crosswalk-curbHeight1" class="font-color-black"></span></div>
+          <div class="card-footer item-title">
+
+            <div class="card-content">
+              <div class="list-block media-list">
+
+                <div class="item-title" id="strip-title">Značení pro zrakově postižené chodce: </div>
+                
+                <div class="card card-2-in-row">          
+                 <div class="card-content">
+                  <div class="card-content-inner" id="rec-crosswalk-signal-strip1"></div>
+                </div>
+                <div class="card-footer">
+                  <div class="item-title footer-title-center">signální pás</div>
+                </div>
+              </div>
+
+              <div class="card card-2-in-row">          
+               <div class="card-content">
+                <div class="card-content-inner" id="rec-crosswalk-warning-strip1"></div>
+              </div>
+              <div class="card-footer">
+                <div class="item-title footer-title-center">varovný pás</div>
+              </div>
+            </div> 
+          </div>
+        </div>           
+      </div>
+      <div class="card-footer item-title">Povrch: <span id="rec-crosswalk-surface1" class="font-color-black"></span></div>
+      <div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-surfQuality1" class="font-color-black"></span></div>
+    </li>
+
+    <li class="card">
+      <div class="card-header" id="map-canvas4"></div>
+      <div class="card-footer item-title">Typ nájezdu: <span id="rec-crosswalk-curbType2" class="font-color-black"></span> <span id="rec-crosswalk-curbHeight2" class="font-color-black"></span></div>
+      <div class="card-footer item-title">
+
+        <div class="card-content">
+          <div class="list-block media-list">            
+
+            <div class="item-title" id="strip-title2">Značení pro zrakově postižené chodce: </div>
+
+            <div class="card card-2-in-row">          
+             <div class="card-content">
+              <div class="card-content-inner" id="rec-crosswalk-signal-strip2"></div>
+            </div>
+            <div class="card-footer">
+              <div class="item-title footer-title-center">signální pás</div>
+            </div>
+          </div>
+
+          <div class="card card-2-in-row">          
+           <div class="card-content">
+            <div class="card-content-inner" id="rec-crosswalk-warning-strip2"></div>
+          </div>
+          <div class="card-footer">
+            <div class="item-title footer-title-center">varovný pás</div>
+          </div>
+        </div> 
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer item-title">Povrch: <span id="rec-crosswalk-surface2" class="font-color-black"></span></div>                  
+  <div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-surfQuality2" class="font-color-black"></span></div>
+
+</li>
+
+
+<li class="card">
+  <div class="card-header" id="map-canvas5"></div>
+  <div class="card-footer item-title">Typ přechodu: <span id="rec-crosswalk-zebra-type" class="font-color-black"></span></div>
+  <div class="card-footer item-title">
+
+    <div class="card-content">
+      <div class="list-block media-list">
+
+      <div class="item-title" id="properties-title">Vlastnosti přechodu: </div>            
+        
+        <div class="card card-2-in-row-prop">          
+         <div class="card-content">
+          <div class="card-content-inner" id="rec-crosswalk-zebra-leading"></div>
+        </div>
+        <div class="card-footer">
+          <div class="item-title footer-title-center">vodící pás</div>
+        </div>
+      </div>
+
+      <div class="card card-2-in-row-prop">          
+       <div class="card-content">
+        <div class="card-content-inner" id="rec-crosswalk-zebra-semafor"></div>
+      </div>
+      <div class="card-footer">
+        <div class="item-title footer-title-center">semafor</div>
+      </div>
+    </div>
+    <br>
+
+    <div class="card card-2-in-row-prop">          
+     <div class="card-content">
+      <div class="card-content-inner" id="rec-crosswalk-zebra-audio"></div>
+    </div>
+    <div class="card-footer">
+      <div class="item-title footer-title-center">audio</div>
+    </div>
+  </div>
+
+  <div class="card card-2-in-row-prop">          
+   <div class="card-content">
+    <div class="card-content-inner" id="rec-crosswalk-zebra-signal"></div>
+  </div>
+  <div class="card-footer">
+    <div class="item-title footer-title-center">tlačítko</div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="card-footer item-title">Počet jídních pruhů: <span id="rec-crosswalk-zebra-drivingLines" class="font-color-black"></span></div>
+<div class="card-footer item-title">Povrch: <span id="rec-crosswalk-zebra-surface" class="font-color-black"></span></div>                  
+<div class="card-footer item-title">Kvalita povrchu: <span id="rec-crosswalk-zebra-surfQuality" class="font-color-black"></span></div>
+</li>
+
+</ul>
+</div>
+</div>
+
+
+</div> 
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="Framework7-1.5.4/dist/js/framework7.min.js"></script>           
+<script type="text/javascript" src="js/my-app.js"></script>   
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIG0fPgRjuZUq6mCc-bBKxuvUPWP_Cwpg">    
+</script>
+</body>
+</html>

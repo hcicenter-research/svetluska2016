@@ -1,0 +1,755 @@
+[  
+   {  
+      "id": "50.07643914.419199",
+      "color":"red",
+      "zindex":2,
+      "validationNumber": 1,
+      "points":  
+         {  
+            "lat":50.076439, 
+            "lng":14.419199
+         }
+      ,
+      "zebraType": "classic",
+      "isLeading": true,
+      "isSemafor": true,
+      "isAudio": false,
+      "isSignal": false,
+      "drivingLines": "2",
+      "surface": "asphalt",
+      "surfQuality": "1",
+      "ramp1": 
+         {
+            "id":"50.07644414.419175",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "1",
+            "points":
+               {  
+               "lat":50.076444,
+               "lng":14.419175
+               }            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07643914.419228",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "1",
+            "points":
+               {  
+               "lat":50.076439,
+               "lng":14.419228
+               }            
+         }      
+   },
+   {  
+      "id": "50.07693014.419294",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points": 
+         {  
+            "lat":50.076930,
+            "lng":14.419294
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1":
+         {
+            "id":"50.07693314.419271",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.076933,
+               "lng":14.419271
+               }
+            
+         }
+      ,
+      "ramp2": 
+         {
+            "id":"50.07693214.419318",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.076932,
+               "lng":14.419318
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07767414.419654",
+      "color":"green",
+      "zindex":3,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.077674,
+            "lng":14.419654
+         }
+      ,
+      "zebraType": "classic",
+      "isLeading": true,
+      "isSemafor": true,
+      "isAudio": false,
+      "isSignal": false,
+      "drivingLines": "2",
+      "surface": "asphalt",
+      "surfQuality": "2",
+      "ramp1": 
+         {
+            "id":"50.07768614.419652",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "1",
+            "points":
+               {  
+               "lat":50.077686,
+               "lng":14.419652
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07765414.419652",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.077654,
+               "lng":14.419652
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07774314.419519",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points": 
+         {  
+            "lat":50.077743,
+            "lng":14.419519
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07774314.419496",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077743,
+               "lng":14.419496
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07774214.419547",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077742,
+               "lng":14.419547
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07765714.419367",
+      "color":"red",
+      "zindex":3,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.077657,
+            "lng":14.419367
+         }
+      ,
+      "zebraType": "island",
+      "isLeading": true,
+      "isSemafor": true,
+      "isAudio": false,
+      "isSignal": false,
+      "drivingLines": "2",
+      "surface": "asphalt",
+      "surfQuality": "2",
+      "ramp1":
+         {
+            "id":"50.07767214.419369",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.077672,
+               "lng":14.419369
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07764014.419369",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.077640,
+               "lng":14.419369
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07768614.418065",
+      "color":"orange",
+      "zindex":4,
+      "validationNumber": 3,
+      "points":  
+         {  
+            "lat":50.077686,
+            "lng":14.418065
+         }
+      ,
+      "zebraType": "classic",
+      "isLeading": true,
+      "isSemafor": true,
+      "isAudio": false,
+      "isSignal": false,
+      "drivingLines": "2",
+      "surface": "asphalt",
+      "surfQuality": "2",
+      "ramp1": 
+         {
+            "id":"50.07769814.418045",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.077698,
+               "lng":14.418045
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07767514.418080",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.077675,
+               "lng":14.418080
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07788914.417995",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.077889,
+            "lng":14.417995
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1":
+         {
+            "id":"50.07788314.417970",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077883,
+               "lng":14.417970
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07789414.418015",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077894,
+               "lng":14.418015
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07789214.417742",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points": 
+         {  
+            "lat":50.077892,
+            "lng":14.417742
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07788814.417717",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077888,
+               "lng":14.417717
+               }
+            
+         }
+      ,
+      "ramp2": 
+         {
+            "id":"50.07789814.417765",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077898,
+               "lng":14.417765
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07793114.418031",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points":
+         {  
+            "lat":50.077931,
+            "lng":14.418031
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1":
+         {
+            "id":"50.07794614.418021",
+            "type": "undefined",
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077946,
+               "lng":14.418021
+               }
+            
+         }
+      ,
+      "ramp2": 
+         {
+            "id":"50.07791614.418037",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.077916,
+               "lng":14.418037
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07825914.418942",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points": 
+         {  
+            "lat":50.078259,
+            "lng":14.418942
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07825114.418920",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078251,
+               "lng":14.418920
+               }
+            
+         }
+      ,
+      "ramp2": 
+         {
+            "id":"50.07826814.418960",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078268,
+               "lng":14.418960
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07827414.419118",
+      "color":"gray",
+      "zindex":3,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.078274,
+            "lng":14.419118
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07829214.419097",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078292,
+               "lng":14.419097
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07826614.419125",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078266,
+               "lng":14.419125
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07896614.419574",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.078966,
+            "lng":14.419574
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07896714.419547",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078967,
+               "lng":14.419547
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07896614.419599",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.078966,
+               "lng":14.419599
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07917214.419735",
+      "color":"gray",
+      "zindex":2,
+      "validationNumber": 0,
+      "points":  
+         {  
+            "lat":50.079172,
+            "lng":14.419735
+         }
+      ,
+      "zebraType": null,
+      "isLeading": null,
+      "isSemafor": null,
+      "isAudio": null,
+      "isSignal": null,
+      "drivingLines": null,
+      "surface": null,
+      "surfQuality": null,
+      "ramp1": 
+         {
+            "id":"50.07918714.419735",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.079187,
+               "lng":14.419735
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07915414.419734",
+            "type": null,
+            "curbHeight": null,
+            "isSignal": null,
+            "isWarning": null,         
+            "surface": null,
+            "surfQuality": null,
+            "points":
+               {  
+               "lat":50.079154,
+               "lng":14.419734
+               }
+            
+         }
+      
+   },
+   {  
+      "id": "50.07932414.419604",
+      "color":"orange",
+      "zindex":2,
+      "validationNumber": 4,
+      "points":  
+         {  
+            "lat":50.079324,
+            "lng":14.419604
+         }
+      ,
+      "zebraType": "island",
+      "isLeading": true,
+      "isSemafor": true,
+      "isAudio": false,
+      "isSignal": false,
+      "drivingLines": "2",
+      "surface": "asphalt",
+      "surfQuality": "90%",
+      "ramp1": 
+         {
+            "id":"50.07932614.419577",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.079326, 
+               "lng":14.419577
+               }
+            
+         }
+      ,
+      "ramp2":
+         {
+            "id":"50.07932714.419630",
+            "type": "barrierFree",
+            "curbHeight": null,
+            "isSignal": true,
+            "isWarning": true,         
+            "surface": "smallCubes",
+            "surfQuality": "2",
+            "points":
+               {  
+               "lat":50.079327, 
+               "lng":14.419630
+               }
+            
+         }
+      
+   }
+]

@@ -1,0 +1,1117 @@
+.toolbar-inner {
+	background-color: black;
+	height: 100%;
+}	
+
+.navbar-inner {	
+	height: 55px;	
+}
+
+.navbar {
+	height: 55px;
+	background-color: #181818;
+	
+}
+
+#view-1 .navbar{
+	background-color: #99938a;
+}
+
+.navbar .center {
+	color: white;
+	line-height: 100%;
+	font-size: 15px;
+}
+
+.toolbar {
+	height: 55px;
+}
+
+.icons {
+    float: left;
+    text-align: center;
+    width: 10%; 
+    color: white;
+    font-size: 10px;    
+    padding: 0px 20px 0px 20px;    
+}
+
+.toolbar a img {
+	height: 20px;
+}
+
+#icon-obstacle {
+	height: 25px;	
+}
+
+#link-search {
+	margin-left: 5px;
+	padding-top: 10px;
+}
+
+#link-obstacle {
+	padding-top: 6px;		
+}
+
+#link-game {
+	padding-top: 10px;
+}
+
+#link-menu {
+	margin-right: -75px;
+	margin-top: -30px;
+}
+
+#icon-menu{
+	height: 7px;
+}
+
+.icons-text {
+	display: block;
+	margin-top: 0px;	
+}
+
+#icon-location {
+	height: 25px;
+	padding-left: 12px;
+	margin-top: 12px;
+	
+}
+
+#icon-map-settings {
+	height: 25px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+#link-location {
+	margin-top: -120px;	
+	background-color: #181818;
+    height:50px;
+    width:50px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    opacity: 0.5;
+}
+
+#link-map-settings {
+	margin-top: -120px;	
+	background-color: #181818;
+    height:50px;
+    width:50px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    opacity: 0.5;
+}
+
+.center {
+	font-size: 12px;
+}
+
+.icon-back {
+	color: white;
+}
+
+.game-nav {
+    width: 100%;
+    float: left;   
+    padding: 0;
+    list-style: none;
+    background-color: #8d8d8d;
+    margin-top: 11px;
+}
+
+.game-nav li {
+    float: left;
+    width: 50%;
+}
+
+.game-nav li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #181818;    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+
+.game-nav li a.active {
+    background-color: #ffffff;
+}
+
+.instruction {
+	font-size: 17px;
+}
+
+#view-2 .content-block{
+	margin-top: 65px;
+	text-align: center;
+	border-style: 0px;
+}
+
+.star-icon {
+    color: #ddd;
+    font-size: 2em;
+    position: relative;
+}
+.star-icon.full:before {
+    text-shadow: 0 0 0.1px #eaeaea;
+    color: #f5c002;
+    content: '\2605';
+    position: absolute;
+    left: 0;
+}
+
+.star-icon.half:before {
+    text-shadow: 0 0 0.1px #eaeaea;
+    color: #f5c002;
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.profile-values {
+	width: 30%;	
+	display: inline-block;
+	padding-bottom: 35px;
+}
+
+#badges, #points {
+	font-size: 30px;
+}
+
+#user-name {
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+#user-avatar {
+	margin-top: 30px;
+}
+
+#leaderboard-block .content-block-inner {
+	margin-top: -65px;
+}
+
+#leaderboard-block .content-block-title {
+	margin-top: 0px;
+}
+
+.board-nav {
+	
+}
+
+#button-confirm-corner {
+    font-size: 17px;
+    height: 54px;
+    line-height: 52px;
+}
+
+#button-confirm-corner-val, #button-edit-corner-val, #button-crosswalk-hand, #button-crosswalk-menu, #button-second-ramp-no, #button-second-ramp-yes, #button-obstacle-select-dimensions-skip, #button-obstacle-select-dimensions, #button-obstacle-durability-no, #button-obstacle-durability-yes, #button-obstacle-camera-skip, #button-obstacle-camera, #button-obstacle-validation-no, #button-obstacle-validation-yes, #button-obstacle-validation-edit, #button-obstacle-validation-confirm, #button-sidewalk-select-vicinity, #button-sidewalk-select-vicinity-skip, #button-sidewalk-select-surface, #button-sidewalk-select-surface-skip, #button-sidewalk-validation-edit, #button-sidewalk-validation-confirm, #button-crosswalk-zebra-select-surface, #button-crosswalk-zebra-select-surface-skip, #button-crosswalk-select-surface, #button-crosswalk-select-surface-skip, #button-crosswalk-select-properties, #button-crosswalk-select-properties-skip, #button-crosswalk-validation-confirm, #button-crosswalk-validation-edit, #button-crosswalk-same-ramps-no, #button-crosswalk-same-ramps-yes {
+	font-size: 17px;
+    height: 54px;
+    line-height: 52px;
+    border-radius: 0px;
+    margin-top: -17px; 
+}
+
+#card-corner-validation {
+	background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    width: 89%;
+    margin-top: 20px;
+
+}
+
+#card-corner-validation img{
+    height: 90px;   
+    margin-left: 80px;
+}
+
+
+
+label.label-checkbox input[type=checkbox]~.item-inner, label.label-radio input[type=radio]~.item-inner {
+    padding-right: 0px;
+}
+
+
+label.label-yellow input[type=radio]:checked~.item-inner {
+    background: rgba(255, 219, 73, 0.7);
+}
+
+label.label-yellow input[type=checkbox]:checked~.item-inner {
+    background: rgba(255, 219, 73, 0.7);
+}
+
+label.label-nobg input[type=checkbox]:checked~.item-inner {
+    background: none;
+}
+
+label.label-nobg input[type=checkbox]:checked~.item-inner {
+    background: none;
+}
+
+.instruction-corner {
+	padding-left: 118px;
+	padding-right: 120px;
+}
+
+
+
+.points-title {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.modal-overlay {
+	background: rgba(0,0,0,0.7);
+}
+
+#map-canvas2 {
+    
+    z-index: -1;
+    width:100%; 
+    height:100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+#map-canvas1 {  
+   
+    width:50%; 
+    height:35%;
+    z-index: 1;
+    position: relative;
+    float:left;
+    border: 10px black;
+    
+}
+
+#map-canvas3, #map-canvas4, #map-canvas5 {
+    
+    width:100%; 
+    height:250px;    
+    
+}
+
+#map-canvas-obstacle-position {
+    width:82%; 
+    height:150px;
+}
+
+#map-canvas-obstacle {
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+
+#map-canvas-obstacle:after {
+    width: 100px;
+    height: 160px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -160px 0 0 -50px;
+    background: url('../img/obstacle_pin2.png');
+    background-size: 100px 160px;
+    pointer-events: none;
+}
+
+.card-content-inner-crosswalk-rampType {
+	margin-top: 70px;
+}
+
+#button-crosswalk-select-ramp, #button-crosswalk-select-rampType, #button-crosswalk-select-strip, #button-crosswalk-select-curb, #button-sidewalk-select-width, #button-sidewalk-select-slope, #button-sidewalk-select-longiSlope-size, #button-sidewalk-select-sideSlope-size, #button-sidewalk-confirm, #button-crosswalk-select-ramp, #button-crosswalk-select-rampType, #button-crosswalk-select-strip, #button-crosswalk-select-curb, #button-crosswalk-select-surface, #button-crosswalk-select-zebraType, #button-crosswalk-recapitulation,
+#button-obstacle-select-map-position, #button-obstacle-select-position, #button-obstacle-select-passable-width, #button-obstacle-select-type, #button-obstacle-camera, #button-obstacle-select-durability, #button-obstacle-confirm, #button-sidewalk-select-longiSlope-size-up, #button-crosswalk-select-drivingLines, #button-obstacle-val-durability, #button-sidewalk-edit-selection, #button-obstacle-edit-selection {
+    font-size: 17px;
+    height: 54px;
+    line-height: 52px;
+}
+
+.card-content-inner-crosswalk-curb {
+	width: 30%;
+	display: inline-block;
+	margin-top: 50px;
+
+}
+
+.card-crosswalk-strip {
+	background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 50px;
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    display: inline-block;
+    width: 27%;    
+}
+
+.card-crosswalk-strip img {
+	height: 40px;
+	padding: 0px;
+}
+
+
+.card-crosswalk-surface {
+	background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 50px;
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    display: inline-block;
+    width: 43%;    
+}
+
+.card-crosswalk-surface img {
+	height: 80px;
+	padding: 0px;
+}
+
+.range-slider {
+  margin: 30px 0 0 0%;
+}
+
+.card-recapitul-2-in-row {
+    background: #fff;
+    box-shadow: none;    
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    display: inline-grid;
+    width: 46%;
+    margin: 5px;       
+}
+
+.content-block-title {
+	white-space: normal;
+    padding-top: 2px;
+}
+
+#crosswalk_meter_div, #crosswalk_creditcard_div, #crosswalk_feet_div, #obstacle_meter_div, #obstacle_creditcard_div, #obstacle_feet_div, #sidewalk_meter_div, #sidewalk_creditcard_div, #sidewalk_feet_div {
+	display: none;
+
+}
+
+input[type="range" i] {
+    color: blue;
+}
+
+.card-3-in-row {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 50px;
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    display: inline-block;
+    width: 27%;    
+}
+
+.card-3-in-row img {
+    height: 50px;
+    padding: 0px;
+}
+
+#obstacle-photo, #rec-obstacle-photo, .leaderboard_list {
+    max-height:100%; 
+    max-width:100%;
+}
+
+.toolbar-fixed .floating-button {
+    bottom: 70px;
+}
+
+.floating-button.color-darkblue{
+    color: #fff;
+    background: #f3b01a;
+}
+
+.floating-button {
+    width: 60px;
+    height: 60px;
+}
+
+
+.button.button-fill.color-purple {
+    color: #fff;
+    background: #a91ce6;
+}
+
+
+circle {
+  fill: none;
+}
+
+.circle-border {
+  stroke: #e5e5e5;
+  stroke-width: 1px;
+}
+
+.circle-back {
+  stroke: #f2f2f2;
+  stroke-width: 30px;
+}
+
+.circle-front {
+  stroke: url(#quotaDonut__gradient);
+  stroke-width: 30px;  
+  stroke-dasharray: 630;  
+  stroke-dashoffset: 630;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset .5s ease;
+}
+
+
+
+.content-block-game {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#view-2 .content-block-game {
+    margin-top: 0;
+    text-align: center;
+    border-style: 0px;
+}
+
+#game-block-profile, #game-block-badges {
+    margin-top: -15px;
+    width: 100%;
+}
+
+.button-leaderboard {
+    border: 0px;
+    color: #bebebe;
+    border-radius: 5px;
+}
+
+.button-leaderboard.active {
+    background: #cecece;
+}
+
+.buttons-row .button-leaderboard {
+    width: 35%;
+    left: 15%;    
+}
+
+.leaderboard_list {
+    margin-top: -40px;
+    margin-bottom: -30px;
+}
+
+#leaderboard-title {
+     margin-top: 8px;
+     margin-bottom: 15px;
+}
+
+#svg-circle {
+    margin-left: 14%;
+    margin-top: -40px;
+}
+
+#badges-challenge-title {
+    margin-top: 5px;
+}
+
+#badges-plus-points-icon {   
+    position: absolute;
+    left: 70%;
+    margin-top: -50px;
+    width: 80px;
+}
+
+#game-cup-icon{    
+    width: 40px;
+    position: absolute;
+    left: 46%;
+    top:33%;
+
+}
+
+#game-challenge-percentage { 
+    
+    position: absolute;
+    left: 47%;
+    top:46%;
+    color: gray;
+
+}
+
+#game-challenge-task {
+    margin-top: -70px;
+    margin-bottom: : 30px;
+    padding: 0 10px 0 10px;
+}
+
+#button-continue-challenge{
+    width: 50%;
+    left: 25%;
+    margin: 20px 0 10px 0;
+}
+
+#badges-list {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#badges-list-block {
+    margin-top: -65px;
+    width: 100%;
+}
+
+#badges-title {
+    margin-top: 5px;
+}
+
+#map-setting-icon-map{
+    width: 100px;
+    border: 3px solid #007aff;
+}
+
+#map-setting-icon-satelit {
+    width: 100px;
+}
+
+.map-setting-icons {
+    display: block;
+    margin-top: -3px;   
+}
+
+#map-settings {
+  display: flex;
+  
+}
+.map-setting-icon-map-div {
+  flex: 0 0 50%;
+  text-align: center;
+}
+#map-setting-icon-satelit-div {
+  flex: 1;
+  text-align: center;
+}
+
+#obstacle-passable-width-image {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+       
+}
+
+.range-slider {
+    color: #0063cf;
+    padding-bottom: 20px;    
+}
+
+.card-3-in-row-obstacle-type {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    width: 27%;
+    height: 145px;    
+    text-align: center;
+    
+}
+
+.card-3-in-row-obstacle-type img {
+    height: 50px;
+    padding: 0px;
+}
+
+.footer-title-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#obstacle-photo-input {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.card-3-in-row-measure {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    width: 27%;       
+    text-align: center;       
+}
+
+.card-3-in-row-measure img {
+    height: 50px;
+    padding: 0px;
+}
+
+.card-content-inner-top-margin {
+    margin-top: 20px;
+}
+
+.list-block .item-title.label {
+    width: 45%;
+}
+
+.button {
+    border: 0px;
+}
+
+.buttons-row .button:first-child {
+    
+    border-left-width: 0px;
+    border-left-style: none;
+}
+
+.list-block input[type=number] {
+    text-align: right;
+}
+
+.fit-image { 
+  /* Resize to fill and retain aspect ratio.
+     Will cause clipping if aspect ratio of box is different from image. */ 
+  background-size: cover;
+  height: 150px;
+  
+}
+
+.card-content-inner-no-padding {
+    padding: 0px;
+}
+
+#rec-obstacle-dimensions-width {
+    margin-right: -160px;
+}
+
+.card-header-gray {
+    color: #6d6d72;
+    font-size: 14px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.font-color-black {
+    color: #181818;
+}
+
+.left-panel-menu {
+    color: #f9f9f9;
+    font-size: 15px;
+}
+
+.corner-content {
+    position: fixed;  
+    left: 50%;
+    margin: 0px 0 0 -150px; 
+}
+
+.page-title {
+    padding-top: 2px;
+}
+
+.sidewalk-content {
+    position: fixed;  
+    left: 50%;
+    margin: 0px 0 0 -150px; 
+}
+
+
+.card-corner {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 70%;
+    margin-top: 0;
+    left: 12%;    
+}
+
+.card-corner img {
+    height: 80px;
+}
+
+.card-content-inner-corner {
+    padding: 20px 0px 0px 92px;
+    position: relative;
+}
+
+.my-card {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;    
+    width: 70%;    
+    left: 50%;
+    margin: 15px 0 0px -130px;          
+}
+
+.my-card img {
+    height: 55px;
+    padding-left: 65px;
+}
+
+.card-surface {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 7px;
+    position: relative;
+    border-radius: 2px;    
+    display: inline-block;
+    width: 43%;    
+}
+
+.card-surface img {
+    height: 80px;
+    padding-left: 5px;
+}
+
+#vicinity-title {
+    margin-top: -10px;
+}
+
+#sidewalk-vicinityLeft-input, #sidewalk-vicinityRight-input {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.card-3-in-row-slope {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    width: 27%;       
+    text-align: center;
+    margin-left: -1px;       
+}
+
+.card-3-in-row-slope img {
+    height: 50px;
+    padding: 0px;
+}
+
+#slope-title, #strip-title, #properties-title, #strip-title2 {
+    font-size: 14px;
+}
+
+.card-crosswalks-types {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    position: relative;
+    border-radius: 2px;
+    font-size: 17px;
+    width: 95%;
+    margin-bottom: 14px;
+}
+
+.card-crosswalks-types img {
+    width: 250px;
+    padding-left: 30px;
+}
+
+#navbar-crosswalk-map {
+    height: 65px;
+}
+
+
+#navbar-crosswalk-map .center {
+    white-space: normal;
+    margin-top: 10px;
+}
+
+#back-crosswalk-map, #points-crosswalk-map {
+    margin-top: 10px;
+}
+
+.crosswalk-card {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;    
+    width: 80%;    
+    left: 46%;
+    margin: 40px 0 0px -130px;          
+}
+
+.crosswalk-card img {
+    height: 70px;
+    padding-left: 65px;    
+}
+
+.floating-button-icon {
+    width:30px; 
+    height:30px;
+    padding-top: 3px;
+}
+
+#floating-button-icon2 {
+    width:37px; 
+    height:37px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.popover-icon {
+    max-height:97%; 
+    max-width:97%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.content-block-title-questions {
+    line-height: 1.2;
+}
+
+.card-crosswalk-zebra-type {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);    
+    position: relative;
+    border-radius: 2px;    
+    width: 70%;    
+    left: 50%;
+    margin: 17px 0 0px -130px;          
+}
+
+.card-crosswalk-zebra-type img {
+    width: 100px;
+    padding-left: 65px;
+}
+
+.card-2-in-row {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 7px;
+    position: relative;
+    border-radius: 2px;    
+    display: inline-block;
+    width: 42%;    
+}
+
+.card-2-in-row img {
+    height: 60px;
+    padding-left: 5px;
+}
+
+.card-2-in-row-prop {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin-top: 7px;
+    position: relative;
+    border-radius: 2px;    
+    display: inline-block;
+    width: 43%;    
+}
+
+.card-2-in-row-prop img {
+    height: 60px;
+    padding-left: 5px;
+}
+
+#rec-crosswalk-curbType1, #rec-crosswalk-curbType2 {
+    padding-left: 70px;
+}
+
+.task-done {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+#icons-text-obstacle {
+    margin-left: -17px;
+}
+
+#icons-text-search {
+    margin-left: -10px;
+}
+
+#points-monthly {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#points-overall {
+    color: gray;
+    font-size: 20px;  
+}
+
+#badges {
+    font-weight: bold;
+}
+
+hr {
+    height: 0.5px;
+    width: 30%;
+}
+
+.icons-text-game {
+    display: block;
+    margin-top: 0px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.modal-title {
+    color: gray;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.modal-points {
+    color: #f3b01a;
+    font-size: 50px;    
+    font-weight: bold;
+}
+
+.modal-thank {
+    font-weight: 20px;
+    color: gray;
+}
+
+.modal-exit {
+    color: gray;
+}
+
+.swiper-container {
+  height: 100%;
+}
+.swiper-slide {
+  background:#fff;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin:20px;
+  font-size:21px;
+}
+
+.slider-images {
+    max-height:100%; 
+    max-width:100%;
+}
+
+.bounce {
+  position: absolute;
+    bottom: 0;
+    top: 28%;
+    left: 65%;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;  
+}
+
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+#button-about-start{
+    width: 50%;
+    left: 25%;
+    margin-top: 110px;
+}
+
+.validationNumber-title {
+    margin-bottom: -20px;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+.crosswalk-type-title {
+    font-size: 14px;
+}
+
+.icon-back {
+    padding: 1px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+#input-file-icon {
+    width: 50px;
+}
+
+
+.validationLabel-orange {
+    background-color: #f3b01a;
+    color: white;
+    padding: 10px;
+    border: 2px solid #f3b01a;
+    border-radius: 5px;
+}
+
+.validationLabel-red {
+    background-color: #ec4345;
+    color: white;
+    padding: 10px;
+    border: 2px solid #ec4345;
+    border-radius: 5px;
+}
+
+.validationLabel-green {
+    background-color: #55ba47;
+    color: white;
+    padding: 10px;
+    border: 2px solid #55ba47;
+    border-radius: 5px;
+}
